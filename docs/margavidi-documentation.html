@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Margavidi — Project Documentation</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@page { size: A4; margin: 0; }
+
+:root{
+  --navy:#05080F;
+  --card:#0A111E;
+  --ink:#0F172A;
+  --muted:#5B6779;
+  --soft:#8A96A8;
+  --rule:#DCE3ED;
+  --wash:#F4F7FA;
+  --cyan:#22D3EE;
+  --cyan-dark:#0891B2;
+  --blue:#2563EB;
+  --gold:#D4AF37;
+  --gold-dark:#A77B12;
+  --amber:#B45309;
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  font-family:'DM Sans','Segoe UI',system-ui,sans-serif;
+  color:var(--ink);
+  background:#DDE4EC;
+  font-size:9.35pt;
+  line-height:1.52;
+  -webkit-print-color-adjust:exact;
+  print-color-adjust:exact;
+}
+.page{
+  width:210mm;height:297mm;background:#fff;position:relative;overflow:hidden;
+  padding:15mm 15mm 17mm;break-after:page;page-break-after:always;
+}
+.page:last-child{break-after:auto;page-break-after:auto;}
+
+/* header / footer */
+.ph{
+  display:flex;justify-content:space-between;align-items:center;
+  font-family:'JetBrains Mono',Consolas,monospace;font-size:6.9pt;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--soft);
+  border-bottom:1px solid var(--rule);padding-bottom:2.2mm;margin-bottom:5.5mm;
+}
+.ph b{color:var(--cyan-dark);font-weight:500;}
+.pf{
+  position:absolute;left:15mm;right:15mm;bottom:7mm;
+  display:flex;justify-content:space-between;align-items:center;
+  font-family:'JetBrains Mono',Consolas,monospace;font-size:6.6pt;
+  letter-spacing:.08em;color:#9AA5B5;border-top:1px solid #EDF1F6;padding-top:2mm;
+}
+.pf .pn{color:var(--ink);font-size:7.4pt;}
+
+/* headings */
+.kicker{
+  font-family:'JetBrains Mono',Consolas,monospace;font-size:7pt;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--cyan-dark);
+  display:flex;align-items:center;gap:2.5mm;margin-bottom:2.5mm;
+}
+.kicker:before{content:'';width:7mm;height:2px;background:var(--cyan);display:block;}
+h1{
+  font-family:'Playfair Display',Georgia,serif;font-weight:600;
+  font-size:24pt;line-height:1.08;letter-spacing:-.01em;margin:0 0 3mm;color:var(--ink);
+}
+h1 em{font-style:normal;color:var(--gold-dark);}
+h2{
+  font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:13.5pt;
+  line-height:1.15;margin:0 0 2mm;color:var(--ink);
+}
+h3{
+  font-family:'DM Sans','Segoe UI',sans-serif;font-weight:600;font-size:9.6pt;
+  margin:0 0 1.4mm;color:var(--ink);
+}
+p{margin:0 0 2.4mm;}
+.lede{font-size:10.4pt;line-height:1.55;color:#3B4759;max-width:172mm;margin-bottom:5mm;}
+.small{font-size:8.2pt;color:var(--muted);}
+.tiny{font-size:7.3pt;line-height:1.45;color:var(--muted);}
+.eyebrow{font-family:'JetBrains Mono',Consolas,monospace;font-size:6.8pt;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-bottom:1.8mm;}
+hr{border:0;border-top:1px solid var(--rule);margin:4mm 0;}
+
+/* layout */
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:7mm;}
+.cols-58{display:grid;grid-template-columns:1.18fr .82fr;gap:7mm;}
+.cols-40{display:grid;grid-template-columns:.78fr 1.22fr;gap:7mm;}
+.cols-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:4mm;}
+.mt2{margin-top:2mm;}.mt3{margin-top:3mm;}.mt4{margin-top:4mm;}.mt5{margin-top:5mm;}
+
+/* cards */
+.card{border:1px solid var(--rule);border-radius:2.4mm;padding:4mm 4.4mm;background:#fff;}
+.wash{background:var(--wash);}
+.dark{background:var(--navy);border-color:#1B2A3E;color:#E5E7EB;}
+.dark h3,.dark h2{color:#F8FAFC;}
+.dark p,.dark li{color:#AEB9C9;}
+.dark .eyebrow{color:#6EE7F9;}
+.accent{border-left:3px solid var(--cyan);}
+.warn{border-left:3px solid #F59E0B;background:#FFFBF2;border-color:#FDE9C8;}
+.goldbox{border-left:3px solid var(--gold);background:#FFFDF6;border-color:#F2E7C4;}
+.card p:last-child,.card ul:last-child{margin-bottom:0;}
+.card-tight{padding:3.2mm 3.8mm;}
+
+/* lists */
+ul{margin:0 0 2.4mm;padding-left:4.2mm;}
+li{margin-bottom:1.2mm;}
+li::marker{color:var(--cyan-dark);}
+ul.clean{list-style:none;padding-left:0;}
+ul.clean li{position:relative;padding-left:4mm;margin-bottom:1.5mm;}
+ul.clean li:before{content:'';position:absolute;left:0;top:1.6mm;width:1.4mm;height:1.4mm;border-radius:50%;background:var(--cyan);}
+ol{margin:0 0 2.4mm;padding-left:4.5mm;}
+ol li::marker{color:var(--cyan-dark);font-weight:600;}
+
+/* tables */
+table{width:100%;border-collapse:collapse;font-size:8.1pt;line-height:1.42;}
+th{
+  text-align:left;font-family:'JetBrains Mono',Consolas,monospace;font-size:6.6pt;
+  letter-spacing:.08em;text-transform:uppercase;color:#5B6779;background:var(--wash);
+  border-bottom:1px solid var(--rule);padding:1.7mm 2mm;font-weight:500;
+}
+td{border-bottom:1px solid #E9EEF5;padding:1.7mm 2mm;vertical-align:top;}
+tr:last-child td{border-bottom:0;}
+td.k{font-family:'JetBrains Mono',Consolas,monospace;font-size:7.1pt;color:var(--cyan-dark);white-space:nowrap;}
+td.num{text-align:right;font-family:'JetBrains Mono',Consolas,monospace;font-size:7.4pt;}
+
+/* code / formula */
+code,.mono{font-family:'JetBrains Mono',Consolas,monospace;font-size:7.7pt;}
+code{background:#EEF4F8;color:#0E7490;padding:.4mm 1.2mm;border-radius:1mm;}
+.formula{
+  background:var(--navy);border:1px solid #1B2A3E;border-radius:2.4mm;
+  padding:3.6mm 4mm;color:#E5E7EB;font-family:'JetBrains Mono',Consolas,monospace;
+  font-size:7.5pt;line-height:1.65;
+}
+.formula .c{color:#67E8F9;}
+.formula .g{color:#E7C566;}
+.formula .m{color:#8FA1B8;}
+.formula .big{color:#F8FAFC;font-size:8.6pt;}
+
+/* chips */
+.chip{
+  display:inline-block;border:1px solid #CDE9F0;background:#F0FBFD;color:#0E7490;
+  border-radius:999px;padding:.7mm 2.2mm;font-family:'JetBrains Mono',Consolas,monospace;
+  font-size:6.5pt;letter-spacing:.03em;margin:0 1mm 1.2mm 0;
+}
+.chip.gold{border-color:#EADDAF;background:#FFF9E6;color:#8A6408;}
+.chip.grey{border-color:#E1E7EF;background:#F6F8FB;color:#5B6779;}
+
+/* metrics */
+.metrics{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3mm;}
+.metric{border:1px solid var(--rule);border-radius:2.2mm;padding:3.2mm 3.4mm;background:var(--wash);}
+.metric .n{font-family:'Playfair Display',Georgia,serif;font-size:19pt;line-height:1;color:var(--ink);}
+.metric .n span{font-size:9pt;color:var(--cyan-dark);}
+.metric .l{font-size:7.4pt;color:var(--muted);margin-top:1.2mm;line-height:1.35;}
+
+/* TOC */
+.toc{list-style:none;padding:0;margin:0;}
+.toc li{display:flex;align-items:baseline;gap:2mm;margin:0 0 3.1mm;font-size:9pt;}
+.toc .n{font-family:'JetBrains Mono',Consolas,monospace;font-size:7pt;color:var(--cyan-dark);width:6mm;}
+.toc .t{white-space:nowrap;}
+.toc .d{flex:1;border-bottom:1px dotted #C7D2E0;transform:translateY(-1mm);}
+.toc .p{font-family:'JetBrains Mono',Consolas,monospace;font-size:7.4pt;color:var(--muted);}
+
+/* figures */
+figure{margin:0;}
+figure img{width:100%;display:block;border-radius:2mm;border:1px solid #24334A;box-shadow:0 3mm 8mm rgba(10,17,30,.14);}
+figcaption{font-size:7.2pt;color:var(--muted);margin-top:1.8mm;line-height:1.4;}
+figcaption b{color:var(--ink);font-weight:600;}
+
+/* diagram */
+.flow{display:flex;align-items:stretch;gap:0;margin:3mm 0;}
+.node{
+  flex:1;border:1px solid var(--rule);border-radius:2mm;background:var(--wash);
+  padding:3mm 3mm;text-align:center;position:relative;
+}
+.node .nn{font-family:'JetBrains Mono',Consolas,monospace;font-size:6.3pt;color:var(--cyan-dark);letter-spacing:.1em;text-transform:uppercase;}
+.node .nt{font-weight:600;font-size:8.4pt;margin-top:1mm;line-height:1.25;}
+.node .nd{font-size:6.9pt;color:var(--muted);margin-top:1mm;line-height:1.35;}
+.arrow{display:flex;align-items:center;justify-content:center;width:7mm;color:#8FB6C4;font-size:12pt;flex:0 0 7mm;}
+.node.dark{background:var(--navy);border-color:#1B2A3E;}
+.node.dark .nt{color:#F8FAFC;}
+.node.dark .nd{color:#AEB9C9;}
+.node.dark .nn{color:#67E8F9;}
+.node.gold{background:#FFF9E7;border-color:#EADDAF;}
+.node.gold .nn{color:var(--gold-dark);}
+
+.stack{display:grid;gap:1.8mm;}
+.layer{display:grid;grid-template-columns:31mm 1fr;border:1px solid var(--rule);border-radius:2mm;overflow:hidden;background:#fff;}
+.layer .lh{background:var(--wash);border-right:1px solid var(--rule);padding:2.4mm 3mm;}
+.layer .lh .ln{font-family:'JetBrains Mono',Consolas,monospace;font-size:6.2pt;color:var(--cyan-dark);letter-spacing:.1em;}
+.layer .lh .lt{font-weight:600;font-size:8.3pt;margin-top:.6mm;}
+.layer .lb{padding:2.4mm 3mm;font-size:7.5pt;color:#3B4759;line-height:1.4;}
+.layer .lb b{color:var(--ink);}
+
+/* swatches */
+.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:2.6mm;}
+.sw{border:1px solid var(--rule);border-radius:2mm;overflow:hidden;background:#fff;}
+.sw .c{height:13mm;}
+.sw .i{padding:1.8mm 2mm 2mm;}
+.sw .h{font-family:'JetBrains Mono',Consolas,monospace;font-size:6.6pt;color:var(--ink);}
+.sw .r{font-size:6.4pt;color:var(--muted);margin-top:.4mm;}
+
+/* misc */
+.tag{display:inline-block;font-family:'JetBrains Mono',Consolas,monospace;font-size:6.5pt;letter-spacing:.05em;color:var(--muted);border:1px solid var(--rule);border-radius:1mm;padding:.5mm 1.5mm;margin:0 1mm 1mm 0;}
+.big-quote{font-family:'Playfair Display',Georgia,serif;font-size:12.5pt;line-height:1.45;color:#223047;border-left:3px solid var(--gold);padding-left:4mm;}
+.kv{display:grid;grid-template-columns:35mm 1fr;gap:1mm 3mm;font-size:8.2pt;}
+.kv .k{color:var(--muted);font-family:'JetBrains Mono',Consolas,monospace;font-size:6.6pt;letter-spacing:.02em;padding-top:.3mm;overflow-wrap:anywhere;word-break:break-word;}
+.two-list{columns:2;column-gap:7mm;}
+.two-list li{break-inside:avoid;}
+.tree{font-family:'JetBrains Mono',Consolas,monospace;font-size:7.15pt;line-height:1.62;color:#26364A;margin:0;white-space:pre;}
+.tree b{color:#0E7490;font-weight:500;}
+.tree i{color:#9AA5B5;font-style:normal;}
+
+/* cover */
+.cover{
+  background:var(--navy);color:#E5E7EB;padding:18mm 18mm 16mm;overflow:hidden;
+}
+.cover:before{
+  content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 76% 28%, rgba(34,211,238,.16), transparent 38%),
+    radial-gradient(circle at 18% 82%, rgba(37,99,235,.12), transparent 42%),
+    linear-gradient(rgba(34,211,238,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34,211,238,.045) 1px, transparent 1px);
+  background-size:auto,auto,20mm 20mm,20mm 20mm;
+  pointer-events:none;
+}
+.cover > *{position:relative;z-index:2;}
+.cover-top{display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',Consolas,monospace;font-size:6.8pt;letter-spacing:.16em;text-transform:uppercase;color:#7C8CA3;}
+.cover-top .dot{color:#22D3EE;}
+.cover-main{margin-top:46mm;}
+.cover h1{font-family:'Playfair Display',Georgia,serif;font-size:54pt;color:var(--gold);letter-spacing:.005em;margin:0 0 2mm;font-weight:600;line-height:1;}
+.cover .sub{font-family:'Playfair Display',Georgia,serif;font-size:16.5pt;color:#E9EDF4;line-height:1.28;max-width:130mm;margin-bottom:6mm;}
+.cover .desc{font-size:10pt;color:#A9B6C8;line-height:1.6;max-width:118mm;margin-bottom:10mm;}
+.cover .rule{width:22mm;height:2px;background:var(--gold);margin:0 0 6mm;}
+.cover .chips .chip{background:rgba(34,211,238,.06);border-color:rgba(34,211,238,.28);color:#8BE9F7;}
+.cover .chips .chip.gold{background:rgba(212,175,55,.07);border-color:rgba(212,175,55,.3);color:#E7C566;}
+.cover-bottom{position:absolute;left:18mm;right:18mm;bottom:15mm;display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid #1B2A3E;padding-top:5mm;}
+.cover-bottom .l{font-size:7.4pt;color:#7C8CA3;line-height:1.6;}
+.cover-bottom .r{font-family:'JetBrains Mono',Consolas,monospace;font-size:6.8pt;letter-spacing:.12em;color:#8BE9F7;text-align:right;line-height:1.7;}
+.scales{position:absolute;right:12mm;top:38mm;width:74mm;opacity:.5;z-index:1;}
+
+/* page-specific */
+.ord{display:grid;grid-template-columns:8mm 1fr;gap:0 3mm;font-size:8.2pt;}
+.ord .n{font-family:'JetBrains Mono',Consolas,monospace;font-size:7pt;color:var(--cyan-dark);padding-top:.2mm;}
+.ord .b{border-bottom:1px solid #EDF1F6;padding-bottom:1.7mm;margin-bottom:1.7mm;}
+.ord .b:last-child{border-bottom:0;}
+.ord b{font-weight:600;}
+.p10 figure img{width:92%;margin:0 auto;}
+.p10 .ord .b{padding-bottom:1.25mm;margin-bottom:1.25mm;}
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 : COVER ================= -->
+<section class="page cover">
+  <svg class="scales" viewBox="0 0 220 220" fill="none" aria-hidden="true">
+    <circle cx="110" cy="110" r="96" stroke="#22D3EE" stroke-opacity=".08"/>
+    <circle cx="110" cy="110" r="78" stroke="#D4AF37" stroke-opacity=".10" stroke-dasharray="3 5"/>
+    <rect x="107" y="42" width="6" height="140" rx="3" fill="#22D3EE" opacity=".55"/>
+    <circle cx="110" cy="38" r="8" fill="#D4AF37" opacity=".8"/>
+    <rect x="38" y="66" width="144" height="5" rx="2.5" fill="#22D3EE" opacity=".55"/>
+    <line x1="52" y1="71" x2="45" y2="112" stroke="#22D3EE" stroke-width="1.5" opacity=".35"/>
+    <line x1="168" y1="71" x2="175" y2="112" stroke="#22D3EE" stroke-width="1.5" opacity=".35"/>
+    <path d="M26 118 Q50 133 74 118" stroke="#22D3EE" stroke-width="2" fill="#22D3EE" fill-opacity=".07"/>
+    <path d="M146 118 Q170 133 194 118" stroke="#22D3EE" stroke-width="2" fill="#22D3EE" fill-opacity=".07"/>
+    <rect x="82" y="182" width="56" height="7" rx="3.5" fill="#D4AF37" opacity=".65"/>
+  </svg>
+
+  <div class="cover-top">
+    <span>Project documentation <span class="dot">/</span> 2026</span>
+    <span>Browser-native legal aid</span>
+  </div>
+
+  <div class="cover-main">
+    <div class="rule"></div>
+    <h1>Margavidi</h1>
+    <div class="sub">AI legal education assistant for Indian citizens.</div>
+    <p class="desc">
+      Everything used to design, build and verify the application — the product flow,
+      the four-layer analysis engine, the 94-section legal dataset, the design system,
+      every library, and the checks that keep it honest.
+    </p>
+    <div class="chips">
+      <span class="chip">React 18</span>
+      <span class="chip">TypeScript</span>
+      <span class="chip">Vite</span>
+      <span class="chip">Tailwind</span>
+      <span class="chip">Transformers.js</span>
+      <span class="chip gold">Gemini (optional)</span>
+      <span class="chip">Vitest</span>
+    </div>
+  </div>
+
+  <div class="cover-bottom">
+    <div class="l">
+      Prepared for the Margavidi project<br>
+      Includes architecture, algorithms, data and operating notes
+    </div>
+    <div class="r">
+      VERSION 1.0<br>
+      OCTOBER 2026
+    </div>
+  </div>
+</section>
+
+<!-- ================= PAGE 2 : CONTENTS ================= -->
+<section class="page">
+  <div class="ph"><span><b>00</b> · Contents</span><span>Margavidi / Documentation</span></div>
+
+  <div class="kicker">Navigation</div>
+  <h1 style="font-size:22pt;margin-bottom:2mm;">Read this first</h1>
+  <p class="lede" style="margin-bottom:7mm;">
+    The document moves from the product, to the engine, to the data, to the code and finally to the
+    operational details. Each page is self-contained, so it can be read in order or used as a reference.
+  </p>
+
+  <div class="cols-58">
+    <div>
+      <div class="eyebrow">Contents</div>
+      <ol class="toc">
+        <li><span class="n">01</span><span class="t">What this build is</span><span class="d"></span><span class="p">03</span></li>
+        <li><span class="n">02</span><span class="t">The user journey</span><span class="d"></span><span class="p">04</span></li>
+        <li><span class="n">03</span><span class="t">System architecture</span><span class="d"></span><span class="p">05</span></li>
+        <li><span class="n">04</span><span class="t">Analysis engine I — routing &amp; scoring</span><span class="d"></span><span class="p">06</span></li>
+        <li><span class="n">05</span><span class="t">Analysis engine II — facts &amp; interview</span><span class="d"></span><span class="p">07</span></li>
+        <li><span class="n">06</span><span class="t">Fallback engines — semantic &amp; Gemini</span><span class="d"></span><span class="p">08</span></li>
+        <li><span class="n">07</span><span class="t">The legal dataset</span><span class="d"></span><span class="p">09</span></li>
+        <li><span class="n">08</span><span class="t">Results screen anatomy</span><span class="d"></span><span class="p">10</span></li>
+        <li><span class="n">09</span><span class="t">Interview question bank</span><span class="d"></span><span class="p">11</span></li>
+        <li><span class="n">10</span><span class="t">Design system</span><span class="d"></span><span class="p">12</span></li>
+        <li><span class="n">11</span><span class="t">Codebase &amp; dependency map</span><span class="d"></span><span class="p">13</span></li>
+        <li><span class="n">12</span><span class="t">Setup &amp; operation</span><span class="d"></span><span class="p">14</span></li>
+        <li><span class="n">13</span><span class="t">Testing &amp; verification</span><span class="d"></span><span class="p">15</span></li>
+        <li><span class="n">14</span><span class="t">Limits, privacy &amp; glossary</span><span class="d"></span><span class="p">16</span></li>
+      </ol>
+    </div>
+
+    <div>
+      <div class="card dark" style="margin-bottom:4mm;">
+        <div class="eyebrow">At a glance</div>
+        <div class="metrics" style="grid-template-columns:1fr 1fr;">
+          <div class="metric" style="background:#0F1A2B;border-color:#22334B;">
+            <div class="n" style="color:#F8FAFC;">94</div>
+            <div class="l" style="color:#9FB0C4;">verified legal sections</div>
+          </div>
+          <div class="metric" style="background:#0F1A2B;border-color:#22334B;">
+            <div class="n" style="color:#F8FAFC;">3</div>
+            <div class="l" style="color:#9FB0C4;">legal domains</div>
+          </div>
+          <div class="metric" style="background:#0F1A2B;border-color:#22334B;">
+            <div class="n" style="color:#F8FAFC;">4</div>
+            <div class="l" style="color:#9FB0C4;">questions, maximum</div>
+          </div>
+          <div class="metric" style="background:#0F1A2B;border-color:#22334B;">
+            <div class="n" style="color:#F8FAFC;">114</div>
+            <div class="l" style="color:#9FB0C4;">automated tests</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card card-tight" style="margin-bottom:3mm;">
+        <div class="eyebrow">One-sentence summary</div>
+        <p style="font-size:8.6pt;margin:0;">
+          A browser-only React app that interviews a citizen about a legal problem, matches the facts
+          against a curated Indian-law dataset, shows a reviewable summary, and then reveals ranked
+          provisions with honest confidence, uncertainty and free legal-aid contacts.
+        </p>
+      </div>
+
+      <div class="card card-tight warn">
+        <div class="eyebrow" style="color:var(--amber);">Important boundary</div>
+        <p class="tiny" style="margin:0;">
+          This is legal <b>education</b>, not legal advice. Confidence measures text/fact alignment,
+          not the strength of a case. Supabase saving is a UI placeholder; no case data is persisted.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">02</span></div>
+</section>
+
+<!-- ================= PAGE 3 : WHAT THIS IS ================= -->
+<section class="page">
+  <div class="ph"><span><b>01</b> · Product</span><span>What this build is</span></div>
+
+  <div class="kicker">01 · Product</div>
+  <h1>A legal explainer that <em>asks before it answers</em>.</h1>
+  <p class="lede">
+    Most legal-search tools return a wall of sections from one sentence. Margavidi runs a short,
+    structured interview, states the facts back to the user, and only then unlocks the findings.
+    The design goal is not to look confident — it is to be inspectable.
+  </p>
+
+  <div class="cols">
+    <div>
+      <h2>The problem</h2>
+      <p>
+        A citizen describing an accident rarely uses statutory language. They say “the truck fled”
+        or “the brakes failed”, not “Section 134 Motor Vehicles Act”. A keyword engine misses the
+        first; a generative model may invent the second. The app therefore combines a deterministic
+        rule engine, a local semantic model and an optional, validated AI fallback.
+      </p>
+      <p>
+        The second problem is trust. A single percentage hides which facts are missing. The interface
+        separates <b>confidence</b> (how well the text matched) from <b>uncertainty</b> (what could
+        change the answer), and gives free NALSA contacts instead of a dead end.
+      </p>
+
+      <h2 class="mt4">Design principles</h2>
+      <ul class="clean">
+        <li><b>Local first.</b> The core analysis runs entirely in the browser; no server is required.</li>
+        <li><b>Ask only what matters.</b> Up to four questions, never one already answered by the text.</li>
+        <li><b>No false precision.</b> Preliminary scores are capped at 85 and hidden until confirmation.</li>
+        <li><b>Human confirmation.</b> The summary is a gate, not a decoration.</li>
+        <li><b>Show the working.</b> Terms, reasons, engine labels and uncertainty are visible.</li>
+        <li><b>Plain language.</b> The interface uses everyday words, with the section number alongside.</li>
+      </ul>
+    </div>
+
+    <div>
+      <figure>
+        <img src="pdf-assets/interview.png" alt="Margavidi case analysis screen at the interview stage">
+        <figcaption><b>The workspace.</b> A 45/55 split: Legal Interview on the left, Legal Findings on the
+          right. The findings panel stays deliberately empty until the interview and summary are complete.</figcaption>
+      </figure>
+
+      <div class="card wash mt3">
+        <div class="eyebrow">Scope of this redesign</div>
+        <div class="two-list" style="font-size:7.9pt;">
+          <ul style="margin:0;">
+            <li>Rebrand to Margavidi</li>
+            <li>Navy + cyan palette, gold wordmark</li>
+            <li>Two-panel layout preserved</li>
+            <li>New interview order</li>
+            <li>Mandatory summary gate</li>
+            <li>Reference results stack</li>
+            <li>Donut + per-section bars</li>
+            <li>Confidence / Uncertainty tabs</li>
+            <li>5 cards + Show all</li>
+            <li>Static NALSA card</li>
+            <li>Follow-up chips fixed</li>
+            <li>Negative answers no longer inflate scores</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">03</span></div>
+</section>
+
+<!-- ================= PAGE 4 : USER JOURNEY ================= -->
+<section class="page">
+  <div class="ph"><span><b>02</b> · Product flow</span><span>The user journey</span></div>
+
+  <div class="kicker">02 · Product flow</div>
+  <h1>Three stages, one mandatory gate.</h1>
+  <p class="lede">
+    The analysis may already be computed, but the interface withholds it. A case moves through
+    <b>interview → summary → results</b>; editing the summary sends it back through the engine.
+  </p>
+
+  <div class="flow">
+    <div class="node dark">
+      <div class="nn">Stage 01</div>
+      <div class="nt">Interview</div>
+      <div class="nd">Describe the case.<br>Answer up to 4 questions.</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="node gold">
+      <div class="nn">Gate</div>
+      <div class="nt">Summary review</div>
+      <div class="nd">Facts restated.<br>Confirm or edit.</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="node dark">
+      <div class="nn">Stage 02</div>
+      <div class="nt">Results</div>
+      <div class="nd">Confidence, aid, cards,<br>uncertainty.</div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="node">
+      <div class="nn">After</div>
+      <div class="nt">Follow-up</div>
+      <div class="nd">Punishment, forum,<br>settlement.</div>
+    </div>
+  </div>
+
+  <div class="cols-58 mt3">
+    <div>
+      <div class="card accent" style="margin-bottom:3mm;">
+        <h3>1 · Legal interview</h3>
+        <p class="small">
+          The opening message is analysed immediately. If the engine needs a fact, the assistant asks
+          one question at a time with option chips. The reference order for road accidents is
+          <b>FIR → witnesses → evidence → insurance</b>, followed by injury, hit-and-run, alcohol,
+          licence, speeding, wrong side and vehicle type.
+        </p>
+        <p class="tiny" style="margin:0;">
+          Progress is shown as “Question n of up to 4”. A <b>Skip — show best answer</b> chip ends the
+          interview. The incident-type question is the one exception: it cannot be skipped, because
+          without a domain there is nothing to search.
+        </p>
+      </div>
+
+      <div class="card goldbox" style="margin-bottom:3mm;">
+        <h3>2 · Summary review (the gate)</h3>
+        <p class="small">
+          The app restates the facts in plain English: who was hurt, whether the driver fled, FIR,
+          witnesses, evidence, insurance. Two actions are offered: <b>Confirm analysis</b> or
+          <b>Edit details</b>. No section cards, confidence score or punishment are shown yet.
+        </p>
+        <p class="tiny" style="margin:0;">
+          Editing is not cosmetic. The correction is appended to the original description; answers
+          that conflict with the correction are deleted from the collected context and the engine
+          runs again.
+        </p>
+      </div>
+
+      <div class="card accent">
+        <h3>3 · Legal findings</h3>
+        <p class="small" style="margin:0;">
+          Confirmation unlocks the full stack: extracted terms, save banner, confidence, NALSA,
+          summary, uncertainty, then up to five provision cards. Follow-up chips answer punishment,
+          filing forum and settlement questions from the current result.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="card wash">
+        <div class="eyebrow">State machine</div>
+        <pre class="tree" style="font-size:6.9pt;line-height:1.55;margin:0;">interview
+  │  answer / skip
+  ├── question? ──→ interview
+  └── complete ───→ summary
+                       │
+             ┌─────────┴─────────┐
+          confirm              edit
+             │                  │
+             ▼                  ▼
+          results           interview
+             │              (re-run)
+             ├── follow-up → chat answer
+             └── new case  → interview</pre>
+      </div>
+
+      <div class="card mt3">
+        <div class="eyebrow">Interaction rules</div>
+        <table>
+          <tr><td class="k">SKIP</td><td>Ends the interview; the best current answer is shown and the skip adds no confidence.</td></tr>
+          <tr><td class="k">EDIT</td><td>Drops conflicting chip answers, merges the typed correction, re-runs the engine.</td></tr>
+          <tr><td class="k">CONFIRM</td><td>Reveals results. There is no route around this gate.</td></tr>
+          <tr><td class="k">NEW CASE</td><td>Resets messages, facts, stage, scene and follow-ups.</td></tr>
+          <tr><td class="k">FOLLOW-UP</td><td>Answered from the current top result, not a new search.</td></tr>
+        </table>
+      </div>
+
+      <div class="card card-tight warn mt3">
+        <p class="tiny" style="margin:0;">
+          <b>Reference alignment.</b> The stack, card limit and both confidence views follow the two
+          supplied design references. The section ranking remains relevance-based, so Section 134 is
+          not hard-coded to appear first.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">04</span></div>
+</section>
+
+<!-- ================= PAGE 5 : ARCHITECTURE ================= -->
+<section class="page">
+  <div class="ph"><span><b>03</b> · Architecture</span><span>System architecture</span></div>
+
+  <div class="kicker">03 · Architecture</div>
+  <h1>Four layers, one browser tab.</h1>
+  <p class="lede">
+    There is no application server. React renders the interface, an orchestrator owns the
+    conversation state, and a chain of three analysis engines reads from bundled legal data.
+  </p>
+
+  <div class="stack">
+    <div class="layer">
+      <div class="lh"><div class="ln">Layer 1</div><div class="lt">Presentation</div></div>
+      <div class="lb"><b>React 18 + TypeScript + Vite.</b> Landing page, two-panel case workspace, chat, results stack, settings, six-language UI. Styling is Tailwind with shadcn/ui primitives.</div>
+    </div>
+    <div class="layer">
+      <div class="lh"><div class="ln">Layer 2</div><div class="lt">Orchestration</div></div>
+      <div class="lb"><b><code>CaseAnalysis.tsx</code>.</b> Owns messages, stage, pending question, pending summary, scene visibility and the analysis request id. Debounces runs and cancels stale results.</div>
+    </div>
+    <div class="layer">
+      <div class="lh"><div class="ln">Layer 3</div><div class="lt">Analysis</div></div>
+      <div class="lb"><b><code>analyze.ts</code>.</b> Runs the rule engine first; escalates weak matches to optional Gemini, then to local semantic search, then returns the honest rule result with a note.</div>
+    </div>
+    <div class="layer">
+      <div class="lh"><div class="ln">Layer 4</div><div class="lt">Knowledge &amp; storage</div></div>
+      <div class="lb"><b>Bundled JSON</b> (<code>acts.json</code>, <code>section-embeddings.json</code>) plus <b>localStorage</b> for the Gemini key/model and semantic-vector cache. No database is connected.</div>
+    </div>
+  </div>
+
+  <div class="cols mt4">
+    <div>
+      <div class="eyebrow">Request lifecycle</div>
+      <ol style="font-size:8.4pt;margin-bottom:0;">
+        <li>The user submits text; the orchestrator creates a fresh conversation context.</li>
+        <li><code>analyzeCaseSmart()</code> calls the deterministic rule engine with the text and answers.</li>
+        <li>If the rule match is strong (≥ 60 and has sections), it returns immediately — no network.</li>
+        <li>Otherwise: Gemini (if a key exists) → validate every returned section against the dataset.</li>
+        <li>If Gemini is unavailable, local semantic search embeds the sentence and compares cosine similarity.</li>
+        <li>Facts and answers adjust confidence; the engine either asks the next question or returns matches.</li>
+        <li>The UI asks for summary confirmation, then renders the results stack.</li>
+      </ol>
+    </div>
+
+    <div>
+      <div class="card dark">
+        <div class="eyebrow">What leaves the browser</div>
+        <table style="font-size:7.6pt;">
+          <tr><td style="color:#8BE9F7;border-color:#22334B;">Nothing</td><td style="border-color:#22334B;">for a strong local rule match</td></tr>
+          <tr><td style="color:#8BE9F7;border-color:#22334B;">Case text</td><td style="border-color:#22334B;">to Google AI only when a key is set and the local match is weak</td></tr>
+          <tr><td style="color:#8BE9F7;border-color:#22334B;">Model file</td><td style="border-color:#22334B;">downloaded once from Hugging Face for semantic search</td></tr>
+          <tr><td style="color:#8BE9F7;border-color:#22334B;">Supabase</td><td style="border-color:#22334B;">nothing — banner is UI-only</td></tr>
+        </table>
+      </div>
+      <div class="card wash mt3">
+        <div class="eyebrow">Browser storage</div>
+        <div class="kv">
+          <div class="k">evakil.gemini.apiKey</div><div>optional user key</div>
+          <div class="k">evakil.gemini.model</div><div>selected model</div>
+          <div class="k">evakil.semantic.vectors.v1</div><div>fallback vector cache</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">05</span></div>
+</section>
+
+<!-- ================= PAGE 6 : ENGINE I ================= -->
+<section class="page">
+  <div class="ph"><span><b>04</b> · Analysis engine</span><span>Routing &amp; scoring</span></div>
+
+  <div class="kicker">04 · Analysis engine I</div>
+  <h1>How a sentence becomes a section.</h1>
+  <p class="lede">
+    The rule engine is deliberately simple and inspectable: classify the domain, score every section,
+    add fact-specific boosts, then decide whether it knows enough to answer.
+  </p>
+
+  <div class="flow" style="margin-top:1mm;">
+    <div class="node"><div class="nn">Layer 1</div><div class="nt">Classify</div><div class="nd">MVA · IPC · IT Act</div></div>
+    <div class="arrow">→</div>
+    <div class="node"><div class="nn">Layer 2</div><div class="nt">Score</div><div class="nd">keywords + content + rules</div></div>
+    <div class="arrow">→</div>
+    <div class="node"><div class="nn">Layer 3</div><div class="nt">Validate</div><div class="nd">thresholds &amp; domain filter</div></div>
+    <div class="arrow">→</div>
+    <div class="node gold"><div class="nn">Layer 4</div><div class="nt">Clarify</div><div class="nd">ask, or return matches</div></div>
+  </div>
+
+  <div class="cols-58 mt3">
+    <div>
+      <h2 style="font-size:11pt;">Domain classification</h2>
+      <p class="small">
+        Tokens are lowercased, stopped and stemmed, then expanded with a synonym map. Three
+        disambiguation rules run before generic scoring because common nouns otherwise dominate:
+      </p>
+      <ul class="clean" style="font-size:8.2pt;">
+        <li><b>Cyber intent without road context → IT Act.</b> “My account was hacked.”</li>
+        <li><b>Theft intent without road context → IPC.</b> “My car was stolen.”</li>
+        <li><b>“Hit” without a vehicle → IPC.</b> “Someone hit me.”</li>
+      </ul>
+      <p class="tiny">
+        Otherwise each domain keyword adds a vote; the winning share becomes domain confidence.
+        Below 30% the app asks what kind of incident occurred instead of guessing.
+      </p>
+
+      <div class="formula mt2">
+        <div class="m">// final weighted score, before facts</div>
+        <div class="big">score = <span class="c">0.40</span>·keywords</div>
+        <div class="big">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="c">0.40</span>·content overlap</div>
+        <div class="big">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ <span class="c">0.20</span>·rule boost</div>
+        <div class="m" style="margin-top:1.5mm;">keywords &amp; rule boost capped at 100</div>
+      </div>
+    </div>
+
+    <div>
+      <table>
+        <thead><tr><th>Signal</th><th>Weight</th><th>What it means</th></tr></thead>
+        <tbody>
+          <tr><td>Keyword match</td><td class="num">40%</td><td>Exact phrase on word boundaries; partial token matches earn proportionally less.</td></tr>
+          <tr><td>Content overlap</td><td class="num">40%</td><td>Query tokens found in the section’s explanation and official text, capped at 100.</td></tr>
+          <tr><td>Rule boost</td><td class="num">20%</td><td>Hand-written patterns: theft, extortion, drunk driving, hacking, road accident.</td></tr>
+          <tr><td>Fact boost</td><td class="num">+30</td><td>Added after scoring; specific facts promote specific sections.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="card wash mt3">
+        <div class="eyebrow">Decision thresholds</div>
+        <table>
+          <tr><td class="k">&lt; 30% domain</td><td>Ask “what kind of incident was this?” once.</td></tr>
+          <tr><td class="k">&lt; 15 score</td><td>Return “Insufficient information”; no cards.</td></tr>
+          <tr><td class="k">&lt; 60 score</td><td>Weak match: try Gemini, then semantic search.</td></tr>
+          <tr><td class="k">≥ 60 score</td><td>Strong enough: return the rule result and skip cloud calls.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card card-tight mt3" style="background:#F8FCFD;">
+    <div class="eyebrow">Ranking rules</div>
+    <p class="tiny" style="margin:0;">
+      After sorting, duplicate act/section pairs are removed. The top section is always kept; every
+      later section must have real evidence and score at least <b>50% of the top score</b>. At most
+      <b>6</b> sections are returned. This is why the interface can say “6 verified” while showing five.
+    </p>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">06</span></div>
+</section>
+
+<!-- ================= PAGE 7 : ENGINE II ================= -->
+<section class="page">
+  <div class="ph"><span><b>05</b> · Analysis engine</span><span>Facts &amp; interview</span></div>
+
+  <div class="kicker">05 · Analysis engine II</div>
+  <h1>Facts are extracted, not assumed.</h1>
+  <p class="lede">
+    A clause-level parser reads the story for the details that change legal relevance — injury,
+    fleeing, brake failure, insurance, FIR — and uses them to personalise both the score and the summary.
+  </p>
+
+  <div class="cols-58">
+    <div>
+      <table>
+        <thead><tr><th>Fact group</th><th>Detected from</th></tr></thead>
+        <tbody>
+          <tr><td><b>Injury</b></td><td>injur*, wound, hurt, bleeding, fracture, hospital, ICU, surgery; negation is handled clause by clause.</td></tr>
+          <tr><td><b>Who / how many</b></td><td>“me and my wife”, “both of us”, number + injury within 35 characters; distinguishes self, companion and bystander.</td></tr>
+          <tr><td><b>Brake failure</b></td><td>brake + fail/problem/defect/leak; “brakes were fine” and “I had to brake” are explicitly excluded.</td></tr>
+          <tr><td><b>Fleeing</b></td><td>fled, ran away, drove off, without stopping, hit and run; “stopped” overrides.</td></tr>
+          <tr><td><b>Driving</b></td><td>overspeeding, rash/dangerous, wrong side/opposite lane, drunk/alcohol; sober negates.</td></tr>
+          <tr><td><b>Documents</b></td><td>no/without licence (not “licence plate”), uninsured, FIR filed/not filed.</td></tr>
+          <tr><td><b>Procedure</b></td><td>witnesses, no witnesses, evidence, photos, CCTV, medical records; explicit absence is recorded.</td></tr>
+          <tr><td><b>Severity</b></td><td>death, fatal, grievous, serious injury, ICU, surgery.</td></tr>
+          <tr><td><b>Other domains</b></td><td>theft/robbery, threat/extortion, unauthorised access, data theft, financial loss.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <div class="card dark">
+        <div class="eyebrow">Fact → section boosts</div>
+        <table style="font-size:7.6pt;">
+          <tr><td style="border-color:#22334B;">Brake failure</td><td style="border-color:#22334B;color:#8BE9F7;">MVA 190 +25</td></tr>
+          <tr><td style="border-color:#22334B;">Death</td><td style="border-color:#22334B;color:#8BE9F7;">IPC 304A +20</td></tr>
+          <tr><td style="border-color:#22334B;">Grievous hurt</td><td style="border-color:#22334B;color:#8BE9F7;">IPC 338 +15</td></tr>
+          <tr><td style="border-color:#22334B;">Injury</td><td style="border-color:#22334B;color:#8BE9F7;">IPC 337 / MVA 134 +10</td></tr>
+          <tr><td style="border-color:#22334B;">Fled</td><td style="border-color:#22334B;color:#8BE9F7;">MVA 132 / 134 +10</td></tr>
+          <tr><td style="border-color:#22334B;">Speeding</td><td style="border-color:#22334B;color:#8BE9F7;">MVA 183, 184; IPC 279 +8</td></tr>
+          <tr><td style="border-color:#22334B;">Wrong side</td><td style="border-color:#22334B;color:#8BE9F7;">MVA 184 +8</td></tr>
+          <tr><td style="border-color:#22334B;">Drunk</td><td style="border-color:#22334B;color:#8BE9F7;">MVA 185 +15</td></tr>
+          <tr><td style="border-color:#22334B;">No licence</td><td style="border-color:#22334B;color:#8BE9F7;">MVA 3 / 181 +12</td></tr>
+          <tr><td style="border-color:#22334B;">Uninsured</td><td style="border-color:#22334B;color:#8BE9F7;">MVA 196 +12</td></tr>
+        </table>
+      </div>
+
+      <div class="card wash mt3">
+        <div class="eyebrow">Answer confidence</div>
+        <table>
+          <tr><td>Fled / hit-and-run</td><td class="num">+20</td></tr>
+          <tr><td>Positive fact (“filed”, “insured”, “valid”)</td><td class="num">+6</td></tr>
+          <tr><td>Free-text detail</td><td class="num">+5</td></tr>
+          <tr><td>Negative, unsure or “no witnesses”</td><td class="num">+1</td></tr>
+          <tr><td>Skip</td><td class="num">0</td></tr>
+        </table>
+        <p class="tiny" style="margin:2mm 0 0;">Negatives resolve a fact but are not evidence that a section applies. That distinction was a deliberate bug fix.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cols mt3">
+    <div class="card card-tight">
+      <div class="eyebrow">Question selection</div>
+      <p class="tiny" style="margin:0;">
+        A question is available only if it has not been asked and the fact is still unknown. The engine
+        picks the first available key from a domain priority list, asks at most <b>4</b> for MVA and
+        <b>1</b> for IPC/IT Act, and stops immediately when the user skips. Every question stores its
+        text so a later answer (“Yes”) can be shown as a labelled Q/A pair.
+      </p>
+    </div>
+    <div class="card card-tight">
+      <div class="eyebrow">Summary generation</div>
+      <p class="tiny" style="margin:0;">
+        The summary is assembled from known facts only: injury and companions, death, brake failure,
+        fleeing, speeding, wrong side, alcohol, licence, FIR, witnesses, evidence and insurance.
+        Unknown facts are omitted rather than guessed. A brake-failure case adds a balanced liability
+        note: the owner/operator may share responsibility, but the driver may argue the failure was unforeseen.
+      </p>
+    </div>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">07</span></div>
+</section>
+
+<!-- ================= PAGE 8 : FALLBACKS ================= -->
+<section class="page">
+  <div class="ph"><span><b>06</b> · Analysis engine</span><span>Fallback engines</span></div>
+
+  <div class="kicker">06 · Analysis engine III</div>
+  <h1>Three engines, in a fixed order.</h1>
+  <p class="lede">
+    The fallbacks are not interchangeable. The rule engine is cheapest and most predictable; the
+    semantic model handles paraphrase locally; Gemini handles genuinely novel phrasing only when the
+    user has supplied a key.
+  </p>
+
+  <div class="flow">
+    <div class="node dark"><div class="nn">Always</div><div class="nt">Rule engine</div><div class="nd">deterministic, offline</div></div>
+    <div class="arrow">→</div>
+    <div class="node"><div class="nn">If weak</div><div class="nt">Gemini</div><div class="nd">optional, user key</div></div>
+    <div class="arrow">→</div>
+    <div class="node"><div class="nn">If unavailable</div><div class="nt">Semantic</div><div class="nd">local embeddings</div></div>
+    <div class="arrow">→</div>
+    <div class="node gold"><div class="nn">Always</div><div class="nt">Honest result</div><div class="nd">note explains the path</div></div>
+  </div>
+
+  <div class="cols mt3">
+    <div>
+      <div class="card accent" style="margin-bottom:3mm;">
+        <h3>Local semantic search</h3>
+        <p class="small">
+          <b>Model:</b> <code>Xenova/bge-small-en-v1.5</code>, a quantized sentence-transformer run
+          through Transformers.js. The query is prefixed with the model’s retrieval instruction,
+          embedded to a 384-dimension vector, and compared with precomputed section vectors by cosine
+          similarity.
+        </p>
+        <table style="margin-top:1mm;">
+          <tr><td class="k">Threshold</td><td>0.45 cosine similarity</td></tr>
+          <tr><td class="k">Candidates</td><td>top 12, filtered to the hinted domain</td></tr>
+          <tr><td class="k">Confidence</td><td>min(80, 30 + similarity × 70) + boosts, capped at 80</td></tr>
+          <tr><td class="k">Vectors</td><td>precomputed at build time; regenerated by script</td></tr>
+          <tr><td class="k">First use</td><td>downloads ~23 MB model; browser-cached</td></tr>
+        </table>
+        <p class="tiny" style="margin:2mm 0 0;">
+          Semantic confidence is intentionally capped lower than a strong rule/Gemini match: a
+          meaning-based guess should not look more certain than a direct legal-text match.
+        </p>
+      </div>
+
+      <div class="card card-tight warn">
+        <div class="eyebrow" style="color:var(--amber);">If the model cannot load</div>
+        <p class="tiny" style="margin:0;">
+          Offline first use, a blocked CDN or a browser without the required features falls back to
+          the rule result. The UI shows a note saying the semantic model was unavailable; it does not
+          silently pretend a semantic match happened.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="card" style="margin-bottom:3mm;">
+        <h3>Optional Google AI (Gemini)</h3>
+        <p class="small">
+          A direct REST call to the Generative Language API (<code>v1beta</code>). The prompt includes
+          the full section catalog and demands strict JSON: case summary, facts, 3–6 matches,
+          clarification question, liability notes.
+        </p>
+        <div class="kv" style="margin:2mm 0;">
+          <div class="k">Default model</div><div><code>gemini-3.8-flash</code></div>
+          <div class="k">Temperature</div><div>0.1 · JSON response mode</div>
+          <div class="k">Timeout</div><div>45 seconds</div>
+          <div class="k">Key storage</div><div>localStorage, never bundled</div>
+          <div class="k">Proxy</div><div><code>VITE_GEMINI_BASE_URL</code></div>
+        </div>
+        <p class="tiny">
+          Every returned section is looked up by act + number in <code>acts.json</code>. Invented
+          sections are discarded; if none survive, the app falls through to semantic search.
+          Safety/recitation blocks and HTTP errors are converted into readable messages.
+        </p>
+      </div>
+
+      <div class="card wash">
+        <div class="eyebrow">Guardrails</div>
+        <table>
+          <tr><td class="k">Hallucination</td><td>catalog-only prompt + local validation</td></tr>
+          <tr><td class="k">Repeats</td><td>normalised question text prevents asking the same thing twice</td></tr>
+          <tr><td class="k">Runaway</td><td>4-question ceiling; AI keys are <code>ai_1…ai_4</code></td></tr>
+          <tr><td class="k">Silent switch</td><td>if Gemini asked the last question, the next answer stays with Gemini</td></tr>
+          <tr><td class="k">Transparency</td><td>result badge says Google AI, Semantic AI or Offline rules</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">08</span></div>
+</section>
+
+<!-- ================= PAGE 9 : DATA ================= -->
+<section class="page">
+  <div class="ph"><span><b>07</b> · Data</span><span>The legal dataset</span></div>
+
+  <div class="kicker">07 · Data</div>
+  <h1>94 sections, three Acts, one JSON file.</h1>
+  <p class="lede">
+    The knowledge base is deliberately small and curated. Every card the app can show comes from
+    this file; no section is generated at runtime.
+  </p>
+
+  <div class="metrics" style="grid-template-columns:repeat(4,1fr);margin-bottom:4mm;">
+    <div class="metric"><div class="n">34</div><div class="l">Motor Vehicles Act, 1988</div></div>
+    <div class="metric"><div class="n">39</div><div class="l">Indian Penal Code, 1860</div></div>
+    <div class="metric"><div class="n">21</div><div class="l">Information Technology Act, 2000</div></div>
+    <div class="metric"><div class="n">0.22<span> MB</span></div><div class="l">precomputed embeddings</div></div>
+  </div>
+
+  <div class="cols-58">
+    <div>
+      <div class="eyebrow">Record schema</div>
+      <table>
+        <thead><tr><th>Field</th><th>Used for</th></tr></thead>
+        <tbody>
+          <tr><td class="k">act_name</td><td>Domain filter, card subtitle, validation key</td></tr>
+          <tr><td class="k">section_number</td><td>Card title and fact boosts</td></tr>
+          <tr><td class="k">section_title</td><td>Heading and rule patterns</td></tr>
+          <tr><td class="k">official_text</td><td>“Applicable law” text; semantic overlap</td></tr>
+          <tr><td class="k">simplified_explanation</td><td>Plain-language card body; semantic overlap</td></tr>
+          <tr><td class="k">punishment</td><td>Punishment field and follow-up answer</td></tr>
+          <tr><td class="k">legal_procedure_guidance</td><td>“What to do” guidance</td></tr>
+          <tr><td class="k">keywords[]</td><td>Exact/phrase keyword scoring</td></tr>
+          <tr><td class="k">chapter_* / domain</td><td>Metadata; helps curation and review</td></tr>
+        </tbody>
+      </table>
+
+      <div class="card wash mt3">
+        <div class="eyebrow">Sample record · MVA Section 3</div>
+        <pre class="tree" style="font-size:6.8pt;line-height:1.55;margin:0;">{
+  "act_name": "Motor Vehicles Act, 1988",
+  "section_number": "3",
+  "section_title": "Necessity for driving licence",
+  "official_text": "No person shall drive ...",
+  "simplified_explanation": "A person cannot
+    drive ... without a valid driving licence.",
+  "punishment": "Penalties under Section 181.",
+  "keywords": ["driving without licence",
+               "valid licence", "DL requirement"]
+}</pre>
+      </div>
+    </div>
+
+    <div>
+      <h2 style="font-size:11pt;">Embeddings</h2>
+      <p class="small">
+        <code>scripts/build-embeddings.mjs</code> embeds each section’s title, explanation and keywords
+        with the same model used at runtime. It writes a JSON file containing
+        the model name, dimensions, IDs and vectors.
+      </p>
+      <div class="formula">
+        <div class="m"># after editing acts.json</div>
+        <div class="big"><span class="c">npm run embeddings</span></div>
+        <div class="m" style="margin-top:1.2mm;">94 vectors · rounded to 3 decimals</div>
+      </div>
+      <p class="tiny mt2">
+        At runtime the bundled vectors are used only if the model name, count and ID order match the
+        current dataset. Otherwise the app rebuilds vectors and caches them in localStorage.
+      </p>
+
+      <div class="card card-tight goldbox mt3">
+        <div class="eyebrow" style="color:var(--gold-dark);">Why this matters</div>
+        <p class="tiny" style="margin:0;">
+          Editing <code>acts.json</code> without regenerating embeddings silently breaks semantic
+          search: the app detects the mismatch and rebuilds in the browser, which is slow and needs
+          internet on first use. Always run the script after data edits.
+        </p>
+      </div>
+
+      <h2 class="mt3" style="font-size:11pt;">What is covered</h2>
+      <p class="tiny" style="margin:0;">
+        MVA: licensing, accident duties, insurance, speed, alcohol, unsafe vehicles and penalties.
+        IPC: theft, robbery, hurt, negligence, extortion, mischief. IT Act: unauthorised access,
+        data theft, identity offences, cheating. The dataset is <b>not exhaustive</b> and still uses
+        IPC 1860 / MVA 1988 labels; it does not map to the Bharatiya Nyaya Sanhita, 2023.
+      </p>
+    </div>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">09</span></div>
+</section>
+
+<!-- ================= PAGE 10 : RESULTS ================= -->
+<section class="page p10">
+  <div class="ph"><span><b>08</b> · Interface</span><span>Results screen anatomy</span></div>
+
+  <div class="kicker">08 · Interface</div>
+  <h1>The results stack, in order.</h1>
+  <p class="lede" style="margin-bottom:4mm;">
+    The right panel follows the reference exactly: context first, then confidence, then help, then
+    the facts, then the uncertainty note, then the provision cards.
+  </p>
+
+  <figure>
+    <img src="pdf-assets/results.png" alt="Margavidi results screen showing extracted terms, confidence donut and legal aid">
+    <figcaption><b>Results, top of panel.</b> Extracted terms, save banner, confidence donut with
+      per-section bars, and the static NALSA legal-aid card.</figcaption>
+  </figure>
+
+  <div class="cols mt3">
+    <div>
+      <div class="ord">
+        <div class="n">01</div><div class="b"><b>Extracted terms.</b> Research-aid chips from the story and facts, not legal conclusions.</div>
+        <div class="n">02</div><div class="b"><b>Save banner.</b> “Sign in to Supabase” — UI only; explains missing credentials.</div>
+        <div class="n">03</div><div class="b"><b>Findings heading.</b> Cyan rule, title, verified-section count.</div>
+        <div class="n">04</div><div class="b"><b>Analysis confidence.</b> Donut, average, per-section bars; Confidence / Uncertainty tabs.</div>
+        <div class="n">05</div><div class="b"><b>India-wide legal aid.</b> NALSA helpline, office, email and directory.</div>
+        <div class="n">06</div><div class="b"><b>Summary.</b> The confirmed plain-English facts.</div>
+        <div class="n">07</div><div class="b"><b>Uncertainty.</b> Engine note explaining weak matches or fallbacks.</div>
+        <div class="n">08</div><div class="b"><b>Provision cards.</b> Five by default; “Show all N provisions” reveals the rest.</div>
+        <div class="n">09</div><div class="b"><b>Follow-ups.</b> Punishment, filing forum, settlement; optional scene toggle.</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card dark" style="margin-bottom:3mm;">
+        <div class="eyebrow">Card behaviour</div>
+        <p class="tiny" style="margin:0;">
+          Each card shows the section, Act, confidence badge and a short explanation. <b>View Details</b>
+          expands the official text, punishment and what-to-do guidance. Cards are collapsible, not modal,
+          so the user can compare provisions without losing their place.
+        </p>
+      </div>
+
+      <div class="card goldbox">
+        <div class="eyebrow" style="color:var(--gold-dark);">The 5-card rule</div>
+        <p class="tiny" style="margin:0;">
+          <code>MAX_VISIBLE_SECTIONS = 5</code>. The panel filters out preliminary cards, slices to five,
+          and only renders the toggle when extras exist. The count in “Show all” is the full verified
+          count, which can be six.
+        </p>
+      </div>
+
+      <div class="card wash mt3">
+        <div class="eyebrow">Static legal aid</div>
+        <p class="tiny" style="margin:0;">
+          <b>15100</b> · NALSA helpline<br>
+          <b>+91 11 2338 2778</b> · office<br>
+          <b>nalsa-dla@nic.in</b> · email<br>
+          <b>nalsa.gov.in</b> · directory
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">10</span></div>
+</section>
+
+<!-- ================= PAGE 11 : QUESTION BANK ================= -->
+<section class="page">
+  <div class="ph"><span><b>09</b> · Interview</span><span>Question bank</span></div>
+
+  <div class="kicker">09 · Interview</div>
+  <h1>What the app asks, and why.</h1>
+  <p class="lede" style="margin-bottom:4mm;">
+    Questions are scripted per domain. Each one maps to a fact used in scoring, the summary, or the
+    uncertainty note. Options are offered as chips, but free text is always accepted.
+  </p>
+
+  <div class="eyebrow">Motor Vehicles Act · priority order</div>
+  <table style="margin-bottom:3.5mm;">
+    <thead><tr><th style="width:17%;">Key</th><th>Question</th><th style="width:30%;">Options</th></tr></thead>
+    <tbody>
+      <tr><td class="k">fir</td><td>Have you filed a police complaint (FIR) about the accident?</td><td>Filed · Not yet · Planning to file</td></tr>
+      <tr><td class="k">witnesses</td><td>Were there witnesses who saw what happened? Can you provide their contact details or descriptions?</td><td>Yes · No witnesses · Not sure</td></tr>
+      <tr><td class="k">evidence</td><td>Do you have evidence like photos, videos, medical records, or CCTV footage?</td><td>Yes · No evidence · Not sure</td></tr>
+      <tr><td class="k">insurance</td><td>Was the other vehicle insured? Have you contacted the insurance company?</td><td>Insured · Not insured · Not sure</td></tr>
+      <tr><td class="k">injured</td><td>Was anyone injured in the accident?</td><td>Yes · No · Not sure</td></tr>
+      <tr><td class="k">hit_and_run</td><td>Did the driver stop after the accident or flee the scene?</td><td>Stopped · Fled / Hit-and-run · Not sure</td></tr>
+      <tr><td class="k">drunk</td><td>Was the driver under the influence of alcohol?</td><td>Yes · No · Not sure</td></tr>
+      <tr><td class="k">licence</td><td>Did the other driver have a valid licence?</td><td>Valid licence · No licence · Not sure</td></tr>
+      <tr><td class="k">overspeeding</td><td>Was the driver overspeeding or driving recklessly?</td><td>Yes · No · Not sure</td></tr>
+      <tr><td class="k">wrong_side</td><td>Was the vehicle being driven on the wrong side of the road?</td><td>Yes · No · Not sure</td></tr>
+      <tr><td class="k">vehicle_type</td><td>What kind of vehicle hit you?</td><td>Car · Bike / Scooter · Truck · Bus · Not sure</td></tr>
+    </tbody>
+  </table>
+
+  <div class="cols">
+    <div>
+      <div class="eyebrow">Indian Penal Code · one question</div>
+      <table>
+        <tr><td class="k">injured</td><td>Was anyone physically injured or assaulted?</td><td>Yes · No · Not sure</td></tr>
+        <tr><td class="k">property</td><td>Was any property stolen or damaged?</td><td>Yes · No · Not sure</td></tr>
+        <tr><td class="k">threat</td><td>Were any threats or intimidation involved?</td><td>Yes · No · Not sure</td></tr>
+      </table>
+    </div>
+    <div>
+      <div class="eyebrow">IT Act · one question</div>
+      <table>
+        <tr><td class="k">unauthorized_access</td><td>Was there unauthorized access to your computer or accounts?</td><td>Yes · No · Not sure</td></tr>
+        <tr><td class="k">data_theft</td><td>Was any personal data stolen or leaked?</td><td>Yes · No · Not sure</td></tr>
+        <tr><td class="k">financial_loss</td><td>Did you suffer financial loss due to the incident?</td><td>Yes · No · Not sure</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="cols mt3">
+    <div class="card card-tight">
+      <div class="eyebrow">Skip semantics</div>
+      <p class="tiny" style="margin:0;">
+        The skip chip is translated to “Skip — show best answer”, recorded as an answer, and sets
+        <code>readyForResult</code>. It contributes <b>0</b> confidence. The incident-type question
+        deliberately has no skip chip.
+      </p>
+    </div>
+    <div class="card card-tight">
+      <div class="eyebrow">Stop conditions</div>
+      <p class="tiny" style="margin:0;">
+        Four answered questions, a skip, a strong enough score for non-MVA domains, or no remaining
+        unknown fact. After that the engine returns a final result and the summary gate opens.
+      </p>
+    </div>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">11</span></div>
+</section>
+
+<!-- ================= PAGE 12 : DESIGN ================= -->
+<section class="page">
+  <div class="ph"><span><b>10</b> · Design</span><span>Design system</span></div>
+
+  <div class="kicker">10 · Design system</div>
+  <h1>Near-black navy, cyan signal, gold brand.</h1>
+  <p class="lede" style="margin-bottom:4mm;">
+    Every colour is an HSL token in <code>src/index.css</code>; components never use ad-hoc hex values.
+    The look is a warm gold wordmark over a cool, instrument-panel interface.
+  </p>
+
+  <div class="swatches">
+    <div class="sw"><div class="c" style="background:#05080F;"></div><div class="i"><div class="h">#05080F</div><div class="r">Background · 222 47% 4%</div></div></div>
+    <div class="sw"><div class="c" style="background:#0A111E;"></div><div class="i"><div class="h">#0A111E</div><div class="r">Card · 221 42% 8%</div></div></div>
+    <div class="sw"><div class="c" style="background:#22D3EE;"></div><div class="i"><div class="h">#22D3EE</div><div class="r">Primary cyan · 187 92% 53%</div></div></div>
+    <div class="sw"><div class="c" style="background:#2563EB;"></div><div class="i"><div class="h">#2563EB</div><div class="r">Blue accent · 221 83% 53%</div></div></div>
+    <div class="sw"><div class="c" style="background:#D4AF37;"></div><div class="i"><div class="h">#D4AF37</div><div class="r">Brand gold · 43 74% 55%</div></div></div>
+    <div class="sw"><div class="c" style="background:#E5E7EB;border-bottom:1px solid #E5E7EB;"></div><div class="i"><div class="h">#E5E7EB</div><div class="r">Foreground · 210 40% 93%</div></div></div>
+    <div class="sw"><div class="c" style="background:#141A24;"></div><div class="i"><div class="h">#141A24</div><div class="r">Muted · 220 30% 11%</div></div></div>
+    <div class="sw"><div class="c" style="background:#202D40;"></div><div class="i"><div class="h">#202D40</div><div class="r">Border · 217 33% 19%</div></div></div>
+  </div>
+
+  <div class="cols mt4">
+    <div>
+      <h2 style="font-size:11pt;">Typography</h2>
+      <div class="card wash" style="padding:3.4mm 4mm;">
+        <div style="font-family:'Playfair Display',Georgia,serif;font-size:19pt;line-height:1.1;">Margavidi</div>
+        <div class="tiny" style="margin-top:.8mm;">Playfair Display · 400–800 · brand, headings, hero</div>
+        <div style="font-family:'DM Sans','Segoe UI',sans-serif;font-size:10pt;margin-top:2.6mm;">Legal Interview · Legal Findings</div>
+        <div class="tiny" style="margin-top:.8mm;">DM Sans · 300–600 · body and controls</div>
+        <div style="font-family:'JetBrains Mono',Consolas,monospace;font-size:7.4pt;letter-spacing:.14em;margin-top:2.6mm;color:#0E7490;">EXTRACTED TERMS · STAGE: RESULTS</div>
+        <div class="tiny" style="margin-top:.8mm;">JetBrains Mono / system mono · micro-labels</div>
+      </div>
+
+      <h2 class="mt3" style="font-size:11pt;">Shape &amp; density</h2>
+      <p class="tiny" style="margin:0;">
+        Radius token <code>0.75rem</code>. Cards use 12–16 px radii, 1 px low-contrast borders and
+        compact Tailwind spacing (<code>space-y-3.5</code>). The interface is intentionally dense:
+        9–13 px text inside panels, larger serif only for the brand and page titles.
+      </p>
+    </div>
+
+    <div>
+      <h2 style="font-size:11pt;">Utility vocabulary</h2>
+      <table>
+        <tr><td class="k">panel-surface</td><td>Gradient panel with a soft border</td></tr>
+        <tr><td class="k">glass-card</td><td>Translucent blur surface</td></tr>
+        <tr><td class="k">cyan-rule</td><td>3 px gradient divider before headings</td></tr>
+        <tr><td class="k">stage-pill</td><td>Monospace uppercase stage badge</td></tr>
+        <tr><td class="k">user-bubble</td><td>Blue chat bubble with shadow</td></tr>
+        <tr><td class="k">confidence-track</td><td>Muted 6 px bar; fill uses cyan→blue</td></tr>
+        <tr><td class="k">btn-glow</td><td>Cyan glow and one-pixel lift</td></tr>
+        <tr><td class="k">grid-texture</td><td>40 px technical grid overlay</td></tr>
+        <tr><td class="k">card-lift</td><td>Spring hover lift on landing cards</td></tr>
+      </table>
+
+      <h2 class="mt3" style="font-size:11pt;">Motion</h2>
+      <p class="tiny" style="margin:0;">
+        Micro-animations run 0.3–0.7 s with cubic-bezier easing: fade-in, slide-up, scale-in,
+        chip-select, float, scales-sway, pulse-glow, waveform. The case scene has its own 5.5 s loops
+        (enter, impact, skid, flee, rain, wheels). <code>prefers-reduced-motion</code> disables every
+        <code>scene-*</code> animation. The scene is opt-in via “Show scene” and its files were not
+        modified in this redesign.
+      </p>
+
+      <div class="card card-tight goldbox mt3">
+        <p class="tiny" style="margin:0;">
+          <b>Reference cues:</b> near-black navy surfaces, cyan rule marks, gold serif brand, monospace
+          micro-labels, thin bordered cards, a donut plus horizontal bars, and a warm amber note for
+          uncertainty.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">12</span></div>
+</section>
+
+<!-- ================= PAGE 13 : CODEBASE ================= -->
+<section class="page">
+  <div class="ph"><span><b>11</b> · Code</span><span>Codebase &amp; dependencies</span></div>
+
+  <div class="kicker">11 · Codebase</div>
+  <h1>Where everything lives.</h1>
+  <p class="lede" style="margin-bottom:4mm;">
+    The app is a standard Vite SPA. Business logic is isolated in four files under <code>src/lib</code>;
+    the UI never re-implements scoring or fact extraction.
+  </p>
+
+  <div class="cols-58">
+    <div>
+      <div class="eyebrow">Source map</div>
+      <pre class="tree">src/
+├─ <b>pages/</b>
+│  ├─ LandingPage.tsx      <i>marketing + domain cards</i>
+│  ├─ CaseAnalysis.tsx     <i>stage machine, chat, wiring</i>
+│  └─ NotFound.tsx
+├─ <b>components/</b>
+│  ├─ ChatPanel.tsx        <i>message list + typing state</i>
+│  ├─ LegalOutputPanel.tsx <i>results stack + 5-card gate</i>
+│  ├─ LegalResponseCard.tsx
+│  ├─ FollowUpChips.tsx    <i>option/result chips</i>
+│  ├─ VoiceInput.tsx       <i>Web Speech API</i>
+│  ├─ LanguageSwitcher.tsx
+│  ├─ AiSettings.tsx       <i>Gemini key + test</i>
+│  ├─ CaseSceneAnimation.tsx
+│  └─ <b>analysis/</b>          <i>confidence, terms, aid,</i>
+│     <i>summary, uncertainty, save banner</i>
+├─ <b>lib/</b>
+│  ├─ search.ts            <i>rules, facts, questions</i>
+│  ├─ analyze.ts           <i>engine orchestration</i>
+│  ├─ semantic.ts          <i>local embeddings</i>
+│  ├─ gemini.ts            <i>optional cloud fallback</i>
+│  └─ scene.ts             <i>animation facts (locked)</i>
+├─ <b>assets/</b>
+│  ├─ acts.json            <i>94 sections</i>
+│  ├─ section-embeddings.json
+│  └─ hero-bg.jpg
+├─ <b>contexts/</b>LanguageContext.tsx
+├─ <b>test/</b>                  <i>8 files · 114 tests</i>
+└─ index.css              <i>all design tokens</i></pre>
+    </div>
+
+    <div>
+      <div class="eyebrow">Direct dependencies</div>
+      <table style="font-size:7.3pt;">
+        <tr><td><b>Core</b></td><td>react 18.3 · react-dom · react-router-dom 6.30 · typescript 5.8 · vite 5.4 · @vitejs/plugin-react-swc</td></tr>
+        <tr><td><b>Styling</b></td><td>tailwindcss 3.4 · tailwindcss-animate · @tailwindcss/typography · class-variance-authority · clsx · tailwind-merge</td></tr>
+        <tr><td><b>UI kit</b></td><td>shadcn/ui patterns over Radix primitives · lucide-react · sonner · recharts · vaul · cmdk · embla-carousel-react · react-day-picker · react-resizable-panels · input-otp · next-themes</td></tr>
+        <tr><td><b>Forms</b></td><td>react-hook-form · @hookform/resolvers · zod</td></tr>
+        <tr><td><b>Data</b></td><td>@tanstack/react-query · date-fns</td></tr>
+        <tr><td><b>AI / ML</b></td><td>@xenova/transformers 2.17 (Transformers.js) · Google Generative Language REST (no SDK)</td></tr>
+        <tr><td><b>Testing</b></td><td>vitest 3.2 · @testing-library/react · @testing-library/jest-dom · jsdom</td></tr>
+        <tr><td><b>Tooling</b></td><td>eslint 9 · typescript-eslint · eslint-plugin-react-hooks · eslint-plugin-react-refresh · postcss · autoprefixer · lovable-tagger</td></tr>
+      </table>
+
+      <div class="card wash mt3">
+        <div class="eyebrow">Why these choices</div>
+        <p class="tiny" style="margin:0;">
+          Radix/shadcn gives accessible dialogs, tabs and tooltips without a design lock-in. Tailwind
+          keeps the dense panel system consistent. Transformers.js is the only way to run a sentence
+          model fully in the browser. There is no Supabase client because saving is not implemented.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">13</span></div>
+</section>
+
+<!-- ================= PAGE 14 : SETUP ================= -->
+<section class="page">
+  <div class="ph"><span><b>12</b> · Operation</span><span>Setup &amp; operation</span></div>
+
+  <div class="kicker">12 · Operation</div>
+  <h1>Run it, build it, change it.</h1>
+  <p class="lede" style="margin-bottom:4mm;">
+    Node.js 18+ is the only prerequisite. The app runs offline after installation, except for the
+    optional semantic model download and the optional Gemini call.
+  </p>
+
+  <div class="cols-58">
+    <div>
+      <div class="eyebrow">Commands</div>
+      <table>
+        <thead><tr><th>Command</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td class="k">npm install</td><td>Install all dependencies</td></tr>
+          <tr><td class="k">npm run dev</td><td>Start Vite; open the URL it prints</td></tr>
+          <tr><td class="k">start-e-vakil.bat</td><td>Windows helper: install if needed, then start the dev server</td></tr>
+          <tr><td class="k">npm run build</td><td>Production build into <code>dist/</code></td></tr>
+          <tr><td class="k">npm run preview</td><td>Serve the production build locally</td></tr>
+          <tr><td class="k">npm test</td><td>Run the 114 Vitest tests once</td></tr>
+          <tr><td class="k">npm run typecheck</td><td><code>tsc --noEmit</code></td></tr>
+          <tr><td class="k">npm run lint</td><td>ESLint over the repository</td></tr>
+          <tr><td class="k">npm run embeddings</td><td>Regenerate section vectors after data edits</td></tr>
+        </tbody>
+      </table>
+
+      <div class="card card-tight warn mt3">
+        <div class="eyebrow" style="color:var(--amber);">Data-edit checklist</div>
+        <p class="tiny" style="margin:0;">
+          1. Edit <code>src/assets/acts.json</code>.<br>
+          2. Run <code>npm run embeddings</code>.<br>
+          3. Run <code>npm test</code> and <code>npm run typecheck</code>.<br>
+          4. Check a known query end-to-end in the browser.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="eyebrow">Environment variables</div>
+      <div class="card wash card-tight" style="margin-bottom:3mm;">
+        <p class="tiny" style="margin:0 0 1.5mm;"><code>VITE_GOOGLE_AI_API_KEY</code> — optional Gemini key. Prefer the in-app settings panel for local use.</p>
+        <p class="tiny" style="margin:0 0 1.5mm;"><code>VITE_GEMINI_MODEL</code> — default <code>gemini-3.8-flash</code>.</p>
+        <p class="tiny" style="margin:0;"><code>VITE_GEMINI_BASE_URL</code> — point to a backend proxy; defaults to Google’s API.</p>
+      </div>
+
+      <div class="card">
+        <div class="eyebrow">Supabase status</div>
+        <p class="small" style="margin-bottom:1.5mm;">
+          The results screen shows a save banner, but no Supabase client is installed and no case is
+          written anywhere. Clicking <b>Sign in</b> raises a toast explaining that
+          <code>VITE_SUPABASE_URL</code> and <code>VITE_SUPABASE_ANON_KEY</code> are required.
+        </p>
+        <p class="tiny" style="margin:0;">
+          To implement it: add the client, create an auth flow, define a cases table with row-level
+          security, then replace the banner handler with a real save/sign-in action.
+        </p>
+      </div>
+
+      <div class="card mt3">
+        <div class="eyebrow">Troubleshooting</div>
+        <table style="font-size:7.5pt;">
+          <tr><td><b>Semantic model fails</b></td><td>First use needs internet; check the Hugging Face CDN, then retry.</td></tr>
+          <tr><td><b>Gemini 401/403</b></td><td>Key rejected; re-enter it in AI Settings.</td></tr>
+          <tr><td><b>Gemini 429</b></td><td>Quota/rate limit; the offline fallback is used.</td></tr>
+          <tr><td><b>Blank page after build</b></td><td>Serve <code>dist/</code>; do not open <code>index.html</code> from disk.</td></tr>
+          <tr><td><b>Port in use</b></td><td>Vite prints an alternate port; or stop the old dev server.</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">14</span></div>
+</section>
+
+<!-- ================= PAGE 15 : TESTING ================= -->
+<section class="page">
+  <div class="ph"><span><b>13</b> · Verification</span><span>Testing &amp; verification</span></div>
+
+  <div class="kicker">13 · Verification</div>
+  <h1>What was checked, and what passed.</h1>
+  <p class="lede" style="margin-bottom:4mm;">
+    The project is covered by unit, component and regression tests, then verified with a real
+    headless-browser walkthrough of the full interview.
+  </p>
+
+  <div class="metrics" style="grid-template-columns:repeat(4,1fr);margin-bottom:4mm;">
+    <div class="metric"><div class="n">114</div><div class="l">tests passing</div></div>
+    <div class="metric"><div class="n">8</div><div class="l">test files</div></div>
+    <div class="metric"><div class="n">0</div><div class="l">type errors</div></div>
+    <div class="metric"><div class="n">0</div><div class="l">lint errors (9 warnings)</div></div>
+  </div>
+
+  <table style="margin-bottom:3.5mm;">
+    <thead><tr><th style="width:31%;">Test file</th><th>Focus</th></tr></thead>
+    <tbody>
+      <tr><td class="k">search.test.ts</td><td>Domain routing, section ranking, 4-question interview, fact parsing, summaries, research terms, negative-answer confidence, follow-up order.</td></tr>
+      <tr><td class="k">analyze.test.ts</td><td>Smart-engine orchestration, weak-match escalation, semantic result shape, fallback notes.</td></tr>
+      <tr><td class="k">gemini.test.ts</td><td>JSON parsing, catalog validation, hallucinated-section rejection, question handling, confidence clamping.</td></tr>
+      <tr><td class="k">regression.test.ts</td><td>Historic failure cases: stolen car vs accident, assault vs road, brake mention, duplicate sections.</td></tr>
+      <tr><td class="k">legal-output-panel.test.tsx</td><td>Five-card default, Show all, Confidence/Uncertainty tabs, summary confirm/edit gate.</td></tr>
+      <tr><td class="k">legal-card-preliminary.test.tsx</td><td>Preliminary cards hidden; confidence and punishment withheld until confirmation.</td></tr>
+      <tr><td class="k">scene-animation.test.tsx</td><td>Scene fact detection and rendering; 13 tests remain green after the redesign.</td></tr>
+      <tr><td class="k">example.test.ts</td><td>Baseline environment smoke test.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="cols">
+    <div>
+      <div class="card wash">
+        <div class="eyebrow">Checks run</div>
+        <table>
+          <tr><td class="k">npm test</td><td>114 passed · 8 files · ~4.1 s</td></tr>
+          <tr><td class="k">npm run typecheck</td><td>passed</td></tr>
+          <tr><td class="k">npm run lint</td><td>0 errors · 9 pre-existing warnings</td></tr>
+          <tr><td class="k">npm run build</td><td>production build succeeded</td></tr>
+        </table>
+      </div>
+
+      <div class="card card-tight goldbox mt3">
+        <div class="eyebrow" style="color:var(--gold-dark);">Manual end-to-end path</div>
+        <p class="tiny" style="margin:0;">
+          Accident description → FIR → witnesses → evidence → insurance → summary review → confirm →
+          results. Verified that the gate hides findings, the donut and bars agree, Show all reveals
+          the sixth card, and the static NALSA details render.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <figure>
+        <img src="pdf-assets/cards.png" alt="Margavidi provision cards and show-all control">
+        <figcaption><b>Verified state.</b> Six sections found; five shown; “Show all 6 provisions”,
+          follow-up chips and the opt-in scene toggle are visible.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">15</span></div>
+</section>
+
+<!-- ================= PAGE 16 : LIMITS ================= -->
+<section class="page">
+  <div class="ph"><span><b>14</b> · Reference</span><span>Limits, privacy &amp; glossary</span></div>
+
+  <div class="kicker">14 · Reference</div>
+  <h1>What it does not do.</h1>
+  <p class="lede" style="margin-bottom:4mm;">
+    Honest limits are part of the product. These are the boundaries to state whenever the app is
+    demonstrated, reviewed or extended.
+  </p>
+
+  <div class="cols">
+    <div>
+      <h2 style="font-size:11pt;">Limits</h2>
+      <ul class="clean" style="font-size:8pt;">
+        <li><b>Dataset coverage.</b> 94 sections across three Acts; not a complete corpus.</li>
+        <li><b>Statute vintage.</b> Labels use IPC 1860 and MVA 1988; no BNS 2023 mapping.</li>
+        <li><b>Confidence meaning.</b> A text/fact match score, not a prediction of success.</li>
+        <li><b>Ranking.</b> Relevance-based; the reference card (Section 134) is not forced to the top.</li>
+        <li><b>Persistence.</b> No auth, database or saved cases. Refreshing loses the conversation.</li>
+        <li><b>Language.</b> Interface translations exist, but legal content and analysis are English-first.</li>
+        <li><b>Legal aid.</b> NALSA details and the sample advocate are static, not a live directory.</li>
+        <li><b>AI fallback.</b> Optional, user-keyed, and still capable of mistakes despite validation.</li>
+      </ul>
+
+      <h2 class="mt3" style="font-size:11pt;">Privacy &amp; security</h2>
+      <p class="small">
+        Core analysis is local. There is no analytics, telemetry or backend. A case description is
+        sent to Google only when the local match is weak <em>and</em> the user has configured a key.
+        A browser-stored key is visible to anyone who can run code on the page, so a public deployment
+        should use <code>VITE_GEMINI_BASE_URL</code> with a server-side proxy.
+      </p>
+      <p class="tiny" style="margin:0;">
+        To remove local traces: clear the Gemini key/model in AI Settings and delete the
+        <code>evakil.semantic.vectors.v1</code> localStorage entry.
+      </p>
+    </div>
+
+    <div>
+      <h2 style="font-size:11pt;">Glossary</h2>
+      <table style="font-size:7.6pt;">
+        <tr><td class="k">MVA</td><td>Motor Vehicles Act, 1988.</td></tr>
+        <tr><td class="k">IPC</td><td>Indian Penal Code, 1860.</td></tr>
+        <tr><td class="k">IT Act</td><td>Information Technology Act, 2000.</td></tr>
+        <tr><td class="k">FIR</td><td>First Information Report, the police complaint that starts a criminal case.</td></tr>
+        <tr><td class="k">NALSA</td><td>National Legal Services Authority; free legal aid.</td></tr>
+        <tr><td class="k">MACT</td><td>Motor Accident Claims Tribunal.</td></tr>
+        <tr><td class="k">Embedding</td><td>A numeric vector representing meaning.</td></tr>
+        <tr><td class="k">Cosine similarity</td><td>Angle-based similarity between two vectors, −1 to 1.</td></tr>
+        <tr><td class="k">Preliminary</td><td>A match while a question is pending; scores are capped and cards withheld.</td></tr>
+        <tr><td class="k">Summary gate</td><td>The mandatory confirm/edit step before results.</td></tr>
+      </table>
+
+      <div class="card dark mt3">
+        <div class="eyebrow">60-second demo script</div>
+        <ol style="font-size:7.8pt;margin:0;padding-left:4mm;">
+          <li>Open <b>/analyze</b> and describe a hit-and-run with an injury.</li>
+          <li>Answer FIR, witnesses, evidence, insurance — point out “Question n of 4”.</li>
+          <li>Review the summary; edit one fact to show the re-run, then confirm.</li>
+          <li>Show terms → confidence donut/bars → NALSA → summary → uncertainty → cards.</li>
+          <li>Switch to Uncertainty, press “Show all”, then ask “What is the punishment?”</li>
+        </ol>
+      </div>
+
+      <p class="tiny mt3" style="margin:0;">
+        <b>Closing:</b> Margavidi is an educational triage tool. It should always be presented with
+        its limits, its data sources, and a route to a qualified advocate.
+      </p>
+    </div>
+  </div>
+
+  <div class="pf"><span>Margavidi · Project Documentation</span><span class="pn">16</span></div>
+</section>
+
+<script>
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    const bad = [...document.querySelectorAll('.page')].map((p, i) => ({
+      page: i + 1,
+      over: Math.round(p.scrollHeight - p.clientHeight)
+    })).filter(x => x.over > 1);
+    document.title = bad.length
+      ? 'OVERFLOW ' + JSON.stringify(bad)
+      : 'FIT pages=' + document.querySelectorAll('.page').length;
+  }, 1200);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+/* Fonts must be imported before any other statements (POSTCSS/CSS rule). */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===================================================
+   e-Vakil Design System — All tokens defined here.
+   HSL only. No ad-hoc colors in components.
+   =================================================== */
+
+@layer base {
+  :root {
+    /* ---- Surfaces (reference: near-black navy) ---- */
+    --background:         222 47% 4%;         /* #05080F */
+    --foreground:         210 40% 93%;        /* #E5E7EB */
+
+    --card:               221 42% 8%;         /* #0A111E */
+    --card-foreground:    210 40% 93%;
+
+    --popover:            221 42% 8%;
+    --popover-foreground: 210 40% 93%;
+
+    /* ---- Brand ---- */
+    --primary:            187 92% 53%;        /* #22D3EE cyan */
+    --primary-foreground: 222 47% 5%;
+    --primary-glow:       187 92% 70%;
+
+    --gold:               43  74% 55%;        /* #D4AF37 */
+    --gold-dim:           43  48% 42%;
+
+    /* ---- Reference accents ---- */
+    --cyan:               187 92% 53%;
+    --cyan-glow:          187 92% 70%;
+    --blue:               221 83% 53%;        /* #2563EB */
+    --user-bubble:        221 83% 42%;
+    --user-bubble-foreground: 0 0% 100%;
+
+    /* ---- Secondary / Muted ---- */
+    --secondary:          220 30% 13%;
+    --secondary-foreground: 210 40% 80%;
+
+    --muted:              220 30% 11%;
+    --muted-foreground:   215 20% 62%;
+
+    --accent:             220 45% 16%;
+    --accent-foreground:  210 40% 93%;
+
+    /* ---- Status ---- */
+    --destructive:        0   70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* ---- Border / Input ---- */
+    --border:             217 33% 19%;
+    --input:              220 30% 13%;
+    --ring:               187 92% 53%;
+
+    --radius: 0.75rem;
+
+    /* ---- Sidebar ---- */
+    --sidebar-background:          221 40% 7%;
+    --sidebar-foreground:          210 40% 80%;
+    --sidebar-primary:             187 92% 53%;
+    --sidebar-primary-foreground:  222 47% 5%;
+    --sidebar-accent:              220 30% 13%;
+    --sidebar-accent-foreground:   210 40% 80%;
+    --sidebar-border:              217 33% 19%;
+    --sidebar-ring:                187 92% 53%;
+
+    /* ---- Glassmorphism ---- */
+    --glass-bg:    221 45% 10% / 0.72;
+    --glass-border: 190 70% 55% / 0.14;
+
+    /* ---- Gradients ---- */
+    --gradient-hero: linear-gradient(135deg, hsl(222 47% 4%), hsl(221 45% 9%), hsl(222 47% 4%));
+    --gradient-primary: linear-gradient(135deg, hsl(187 92% 46%), hsl(221 83% 56%));
+    --gradient-gold: linear-gradient(135deg, hsl(43 74% 46%), hsl(43 74% 64%));
+    --gradient-card: linear-gradient(160deg, hsl(221 40% 10% / 0.92), hsl(221 45% 6% / 0.92));
+    --gradient-confidence: linear-gradient(90deg, #06B6D4, #3B82F6);
+
+    /* ---- Shadows / Glows ---- */
+    --shadow-primary: 0 0 30px hsl(187 92% 53% / 0.22), 0 8px 32px hsl(221 83% 53% / 0.12);
+    --shadow-gold: 0 0 20px hsl(43 74% 55% / 0.25);
+    --shadow-card: 0 4px 24px hsl(222 47% 2% / 0.65);
+    --shadow-glow-sm: 0 0 12px hsl(187 92% 53% / 0.28);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-feature-settings: 'cv02', 'cv03', 'cv04';
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* ===================================================
+   Utility Classes — Defined here, used via className
+   =================================================== */
+
+@layer utilities {
+  /* Glass card */
+  .glass-card {
+    background: hsl(var(--glass-bg));
+    border: 1px solid hsl(var(--glass-border));
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  /* Gold text */
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  /* Brand wordmark — serif gold, as in the reference */
+  .font-brand {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: hsl(var(--gold));
+    letter-spacing: 0.01em;
+  }
+
+  /* Reference panel surface */
+  .panel-surface {
+    background:
+      linear-gradient(180deg, hsl(221 42% 9% / 0.92), hsl(221 45% 6% / 0.94));
+    border: 1px solid hsl(var(--border) / 0.75);
+  }
+
+  /* STAGE: RESULTS pill */
+  .stage-pill {
+    border: 1px solid hsl(var(--primary) / 0.35);
+    background: hsl(var(--primary) / 0.10);
+    color: hsl(var(--primary-glow));
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  /* User chat bubble */
+  .user-bubble {
+    background: hsl(var(--user-bubble));
+    color: hsl(var(--user-bubble-foreground));
+    border: 1px solid hsl(var(--blue) / 0.55);
+    box-shadow: 0 8px 22px hsl(var(--blue) / 0.16);
+  }
+
+  /* Confidence bar */
+  .confidence-track {
+    height: 6px;
+    border-radius: 999px;
+    background: hsl(var(--muted));
+    overflow: hidden;
+  }
+  .confidence-fill {
+    height: 100%;
+    border-radius: inherit;
+    background: var(--gradient-confidence);
+    box-shadow: 0 0 12px hsl(var(--primary) / 0.45);
+    transition: width 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  /* Thin cyan divider used by section headers */
+  .cyan-rule {
+    width: 3px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, hsl(var(--primary)), hsl(var(--blue)));
+    box-shadow: 0 0 10px hsl(var(--primary) / 0.35);
+  }
+
+  /* Primary glow button */
+  .btn-glow {
+    box-shadow: var(--shadow-primary);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+  }
+  .btn-glow:hover {
+    box-shadow: 0 0 45px hsl(var(--primary) / 0.4), 0 12px 40px hsl(var(--blue) / 0.2);
+    transform: translateY(-1px);
+  }
+
+  /* Grid texture overlay */
+  .grid-texture {
+    background-image:
+      linear-gradient(hsl(var(--primary) / 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Card hover lift */
+  .card-lift {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  }
+  .card-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px hsl(var(--primary) / 0.2), 0 0 40px hsl(var(--primary) / 0.12);
+  }
+
+  /* Pulse ring for mic */
+  .mic-pulse::before {
+    content: '';
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: 2px solid hsl(var(--primary));
+    animation: mic-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    opacity: 0;
+  }
+
+  /* Scrollbar */
+  .scrollbar-custom {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+  .scrollbar-custom::-webkit-scrollbar { width: 4px; }
+  .scrollbar-custom::-webkit-scrollbar-track { background: transparent; }
+  .scrollbar-custom::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 2px; }
+
+  /* Gradient text */
+  .gradient-text-primary {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .gradient-text-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Confidence badge colors */
+  .badge-high   { background: hsl(142 60% 20%); color: hsl(142 70% 60%); border: 1px solid hsl(142 60% 35%); }
+  .badge-medium { background: hsl(45 60% 20%);  color: hsl(45 85% 65%);  border: 1px solid hsl(45 60% 40%); }
+  .badge-low    { background: hsl(0 60% 20%);   color: hsl(0 70% 65%);   border: 1px solid hsl(0 60% 35%); }
+}
+
+/* ===================================================
+   Keyframe Animations
+   =================================================== */
+
+@keyframes accordion-down {
+  from { height: 0; opacity: 0; }
+  to   { height: var(--radix-accordion-content-height); opacity: 1; }
+}
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); opacity: 1; }
+  to   { height: 0; opacity: 0; }
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes mic-ring {
+  0%   { transform: scale(1);    opacity: 0.7; }
+  100% { transform: scale(1.8);  opacity: 0; }
+}
+@keyframes waveform {
+  0%, 100% { transform: scaleY(0.3); }
+  50%       { transform: scaleY(1); }
+}
+@keyframes scales-sway {
+  0%, 100% { transform: rotate(-3deg); }
+  50%       { transform: rotate(3deg); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+@keyframes shimmer {
+  from { background-position: -200% center; }
+  to   { background-position: 200% center; }
+}
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px hsl(var(--primary) / 0.3); }
+  50%       { box-shadow: 0 0 40px hsl(var(--primary) / 0.6), 0 0 60px hsl(var(--primary) / 0.2); }
+}
+@keyframes chip-select {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+/* ── Case scene animation ──────────────────────────────────────────────── */
+
+@keyframes scene-enter-left {
+  0%   { transform: translateX(-170px); opacity: 0; }
+  12%  { opacity: 1; }
+  52%  { transform: translateX(0); }
+  60%  { transform: translateX(6px); }
+  68%  { transform: translateX(-2px); }
+  100% { transform: translateX(0); opacity: 1; }
+}
+@keyframes scene-shake {
+  0%, 55%, 100% { transform: translateX(0); }
+  60%  { transform: translateX(-3px); }
+  65%  { transform: translateX(3px); }
+  70%  { transform: translateX(-2px); }
+  75%  { transform: translateX(2px); }
+}
+@keyframes scene-impact-pop {
+  0%, 50% { opacity: 0; transform: scale(0.3); }
+  56% { opacity: 1; transform: scale(1.35); }
+  70% { opacity: 0.9; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.9); }
+}
+@keyframes scene-dash-move {
+  to { stroke-dashoffset: -48; }
+}
+@keyframes scene-skid {
+  0%, 40% { width: 0; opacity: 0; }
+  55% { width: 72px; opacity: 0.9; }
+  100% { width: 72px; opacity: 0; }
+}
+@keyframes scene-flee-right {
+  0%, 52% { transform: translateX(0); opacity: 0; }
+  58% { opacity: 1; }
+  100% { transform: translateX(95px); opacity: 0; }
+}
+@keyframes scene-run-right {
+  0%   { transform: translateX(-34px); }
+  50%  { transform: translateX(46px); }
+  100% { transform: translateX(-34px); }
+}
+@keyframes scene-run-left {
+  0%   { transform: translateX(34px); }
+  50%  { transform: translateX(-46px); }
+  100% { transform: translateX(34px); }
+}
+@keyframes scene-item-lift {
+  0%, 18% { transform: translate(0, 0) rotate(0); opacity: 1; }
+  55% { transform: translate(26px, -30px) rotate(26deg); opacity: 0.9; }
+  100% { transform: translate(0, 0) rotate(0); opacity: 1; }
+}
+@keyframes scene-pulse-ring {
+  0%   { transform: scale(0.7); opacity: 0.85; }
+  100% { transform: scale(1.7); opacity: 0; }
+}
+@keyframes scene-scan-line {
+  0%   { transform: translateY(-20px); }
+  50%  { transform: translateY(20px); }
+  100% { transform: translateY(-20px); }
+}
+@keyframes scene-float-up {
+  0%   { transform: translateY(4px); opacity: 0; }
+  20%  { opacity: 1; }
+  100% { transform: translateY(-42px); opacity: 0; }
+}
+@keyframes scene-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-3px); }
+}
+@keyframes scene-bob-run {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+@keyframes scene-limb-swing {
+  0%, 100% { transform: rotate(-16deg); }
+  50%      { transform: rotate(16deg); }
+}
+@keyframes scene-limb-swing-run {
+  0%, 100% { transform: rotate(-28deg); }
+  50%      { transform: rotate(28deg); }
+}
+@keyframes scene-wheel-spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes scene-rain-fall {
+  0%   { transform: translateY(-40px); opacity: 0; }
+  15%  { opacity: 0.9; }
+  100% { transform: translateY(200px); opacity: 0; }
+}
+@keyframes scene-wobble {
+  0%, 100% { transform: rotate(-2.2deg); }
+  50%      { transform: rotate(2.2deg); }
+}
+@keyframes scene-speedline {
+  0%   { transform: translateX(10px); opacity: 0; }
+  50%  { opacity: 0.9; }
+  100% { transform: translateX(-14px); opacity: 0; }
+}
+
+@layer utilities {
+  .animate-fade-in      { animation: fade-in 0.5s ease-out both; }
+  .animate-slide-up     { animation: slide-up 0.6s ease-out both; }
+  .animate-scale-in     { animation: scale-in 0.3s ease-out both; }
+  .animate-float        { animation: float 4s ease-in-out infinite; }
+  .animate-scales-sway  { animation: scales-sway 4s ease-in-out infinite; }
+  .animate-pulse-glow   { animation: pulse-glow 2.5s ease-in-out infinite; }
+  .animate-waveform     { animation: waveform 0.8s ease-in-out infinite; }
+  .animate-chip-select  { animation: chip-select 0.3s ease-out; }
+
+  .scene-enter-left { animation: scene-enter-left 5.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-shake      { animation: scene-shake 5.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-impact     { animation: scene-impact-pop 5.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-dash       { animation: scene-dash-move 1.2s linear infinite; }
+  .scene-skid       { animation: scene-skid 5.5s ease-in-out infinite; }
+  .scene-flee       { animation: scene-flee-right 5.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-run-right  { animation: scene-run-right 4.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-run-left   { animation: scene-run-left 4.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-lift       { animation: scene-item-lift 4.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-pulse      { animation: scene-pulse-ring 2.4s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-scan       { animation: scene-scan-line 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-float-up   { animation: scene-float-up 2.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-bob        { animation: scene-bob 2.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-walk-bob   { animation: scene-bob 0.9s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-run-bob    { animation: scene-bob-run 0.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-swing      { animation: scene-limb-swing 0.9s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 0%; }
+  .scene-swing-alt  { animation: scene-limb-swing 0.9s ease-in-out infinite; animation-delay: -0.45s; transform-box: fill-box; transform-origin: 50% 0%; }
+  .scene-swing-run  { animation: scene-limb-swing-run 0.5s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 0%; }
+  .scene-swing-run-alt { animation: scene-limb-swing-run 0.5s ease-in-out infinite; animation-delay: -0.25s; transform-box: fill-box; transform-origin: 50% 0%; }
+  .scene-wheel      { animation: scene-wheel-spin 1.1s linear infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-wheel-fast { animation: scene-wheel-spin 0.45s linear infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-rain       { animation: scene-rain-fall 1.4s linear infinite; transform-box: fill-box; transform-origin: center; }
+  .scene-wobble     { animation: scene-wobble 1.1s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 90%; }
+  .scene-speedline  { animation: scene-speedline 0.8s linear infinite; transform-box: fill-box; transform-origin: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [class*="scene-"] {
+    animation: none !important;
+  }
+}

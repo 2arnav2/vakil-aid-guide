@@ -1,0 +1,1920 @@
+[
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "II",
+    "chapter_title": "Licensing of Drivers of Motor Vehicles",
+    "section_number": "3",
+    "section_title": "Necessity for driving licence",
+    "official_text": "No person shall drive a motor vehicle in any public place unless he holds an effective driving licence issued to him authorising him to drive the vehicle...",
+    "simplified_explanation": "A person cannot drive any motor vehicle in a public place without a valid driving licence. For transport vehicles, the licence must specifically permit driving that category.",
+    "punishment": "Driving without a valid licence attracts penalties under Section 181.",
+    "legal_procedure_guidance": "If fined for no licence, you may request the challan details and verify whether your licence category matches the vehicle class.",
+    "keywords": [
+      "driving without licence",
+      "valid licence",
+      "transport vehicle licence",
+      "challan no licence",
+      "DL requirement"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "II",
+    "chapter_title": "Licensing of Drivers of Motor Vehicles",
+    "section_number": "4",
+    "section_title": "Age limit in connection with driving of motor vehicles",
+    "official_text": "No person under the age of eighteen years shall drive a motor vehicle in any public place...",
+    "simplified_explanation": "Minimum age to drive a motor vehicle is 18 years. A 16-year-old may drive a 50cc motorcycle. Transport vehicles require minimum age of 20 years.",
+    "punishment": "Violation may attract penalties including fines and action under juvenile driving provisions.",
+    "legal_procedure_guidance": "If accused of underage driving, age proof and licence details should be verified. Juvenile driving may also impose liability on guardian/owner.",
+    "keywords": [
+      "minimum driving age",
+      "underage driving",
+      "50cc bike age limit",
+      "transport vehicle age",
+      "minor driving offence"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "II",
+    "chapter_title": "Licensing of Drivers of Motor Vehicles",
+    "section_number": "5",
+    "section_title": "Responsibility of owners for contravention of sections 3 and 4",
+    "official_text": "No owner or person in charge of a motor vehicle shall cause or permit any person who does not satisfy section 3 or 4 to drive the vehicle.",
+    "simplified_explanation": "Vehicle owners are legally responsible if they allow someone without valid licence or proper age to drive their vehicle.",
+    "punishment": "Owner may face penalties if they knowingly permit unlicensed or underage driving.",
+    "legal_procedure_guidance": "If owner is fined, authorities must establish that the owner permitted the violation knowingly.",
+    "keywords": [
+      "owner liability",
+      "permit unlicensed driver",
+      "minor driving responsibility",
+      "vehicle owner offence"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "II",
+    "chapter_title": "Licensing of Drivers of Motor Vehicles",
+    "section_number": "6",
+    "section_title": "Restrictions on holding of driving licences",
+    "official_text": "No person shall hold more than one driving licence except permitted cases...",
+    "simplified_explanation": "A person cannot legally hold multiple driving licences simultaneously. Using someone else's licence is illegal.",
+    "punishment": "Misuse or holding multiple licences can lead to cancellation and penalties.",
+    "legal_procedure_guidance": "If accused of duplicate licence, verification from licensing authority records is required.",
+    "keywords": [
+      "duplicate driving licence",
+      "multiple DL",
+      "misuse of licence",
+      "fake licence"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "II",
+    "chapter_title": "Licensing of Drivers of Motor Vehicles",
+    "section_number": "7",
+    "section_title": "Restrictions on granting learner’s licence",
+    "official_text": "No person shall be granted a learner’s licence to drive a transport vehicle unless he has held a driving licence for light motor vehicle for at least one year...",
+    "simplified_explanation": "To obtain learner’s licence for transport vehicle, prior experience with light motor vehicle licence is required. Under 18 cannot get learner’s licence for motor cycle without consent.",
+    "punishment": "Granting licence in violation may be cancelled.",
+    "legal_procedure_guidance": "If learner’s licence is disputed, verify eligibility criteria including age and prior licence status.",
+    "keywords": [
+      "learner licence rules",
+      "transport learner licence",
+      "LMV requirement",
+      "age for learner licence"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "II",
+    "chapter_title": "Licensing of Drivers of Motor Vehicles",
+    "section_number": "8",
+    "section_title": "Grant of learner’s licence",
+    "official_text": "Any eligible person may apply to licensing authority for learner’s licence subject to prescribed documents and medical certification where required...",
+    "simplified_explanation": "Eligible individuals can apply for learner’s licence through prescribed process, documents, fee and medical certificate (for transport vehicle).",
+    "punishment": "False declaration may attract legal consequences.",
+    "legal_procedure_guidance": "If licence was refused, applicant may check medical fitness or documentation compliance.",
+    "keywords": [
+      "apply learner licence",
+      "learner licence process",
+      "medical certificate DL",
+      "licensing authority",
+      "learner licence issue",
+      "learner licence eligibility",
+      "learner licence refusal",
+      "DL identity verification",
+      "electronic learner licence"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "II",
+    "chapter_title": "Licensing of Drivers of Motor Vehicles",
+    "section_number": "9",
+    "section_title": "Grant of driving licence",
+    "official_text": "Any person not disqualified may apply to the licensing authority for grant of driving licence. Applicant must pass prescribed test of competence unless exempted under specified conditions...",
+    "simplified_explanation": "A person who is not disqualified may apply for a driving licence. The applicant must pass a driving test unless exempt due to prior valid licence or recognized foreign licence. Medical fitness may be required.",
+    "punishment": "If licence is obtained through false information, it may be refused or cancelled. Disqualified persons cannot obtain licence.",
+    "legal_procedure_guidance": "If driving licence is refused, the applicant has right to appeal within 30 days. If test is failed, reappearance rules apply. Licensing authority must record reasons for refusal in writing.",
+    "keywords": [
+      "apply driving licence",
+      "DL test requirement",
+      "driving test failure",
+      "appeal licence refusal",
+      "medical fitness driving licence",
+      "transport vehicle licence"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "II",
+    "chapter_title": "Licensing of Drivers of Motor Vehicles",
+    "section_number": "10",
+    "section_title": "Form and contents of licences to drive",
+    "official_text": "Every learner’s licence and driving licence shall be in such form and contain such information as prescribed by the Central Government. The licence specifies classes of vehicles the holder is authorised to drive.",
+    "simplified_explanation": "A driving licence must follow prescribed format and clearly mention the class of vehicle the holder is permitted to drive (e.g., LMV, transport vehicle, motorcycle).",
+    "punishment": "Driving a vehicle class not authorised in the licence may attract penalties under relevant offence sections.",
+    "legal_procedure_guidance": "If fined for driving wrong vehicle category, verify the licence class printed on your DL. The class must match the vehicle type.",
+    "keywords": [
+      "vehicle class in licence",
+      "LMV licence",
+      "transport vehicle endorsement",
+      "wrong licence category",
+      "driving without proper endorsement"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "II",
+    "chapter_title": "Licensing of Drivers of Motor Vehicles",
+    "section_number": "19",
+    "section_title": "Power of licensing authority to disqualify or revoke licence",
+    "official_text": "If the licensing authority is satisfied that the licence holder is a habitual offender, drunkard, addict, has used vehicle in commission of offence, obtained licence by fraud, or poses danger to public, it may disqualify or revoke licence after giving opportunity of hearing.",
+    "simplified_explanation": "The licensing authority can suspend or cancel a driving licence if the holder commits serious offences, drives dangerously, obtained licence fraudulently, or is repeatedly involved in violations.",
+    "punishment": "Disqualification period may apply. Repeat offences can lead to revocation. Driver refresher training may be mandatory before licence return.",
+    "legal_procedure_guidance": "Before revoking licence, authority must provide opportunity of hearing. An appeal can be filed within 30 days of order. Licence must be surrendered during suspension period.",
+    "keywords": [
+      "licence suspension",
+      "DL cancellation",
+      "driving licence revocation",
+      "habitual offender",
+      "appeal against licence cancellation",
+      "driver refresher training",
+      "licence appeal",
+      "DL suspension appeal",
+      "driver refresher course",
+      "licence revocation procedure",
+      "appeal traffic suspension"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "IV",
+    "chapter_title": "Registration of Motor Vehicles",
+    "section_number": "39",
+    "section_title": "Necessity for registration",
+    "official_text": "No person shall drive any motor vehicle and no owner shall permit the vehicle to be driven in any public place unless the vehicle is registered and carries a valid registration mark as prescribed.",
+    "simplified_explanation": "Every motor vehicle must be properly registered and display a valid registration number. Driving an unregistered vehicle in a public place is illegal.",
+    "punishment": "Using an unregistered vehicle attracts penalties under Section 192.",
+    "legal_procedure_guidance": "If fined for no registration, verify whether the vehicle registration was active and not suspended or cancelled. Dealer vehicles may be exempt under prescribed conditions.",
+    "keywords": [
+      "unregistered vehicle",
+      "vehicle registration mandatory",
+      "RC suspension",
+      "driving without RC",
+      "registration certificate offence"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "VIII",
+    "chapter_title": "Control of Traffic",
+    "section_number": "130",
+    "section_title": "Duty to produce licence and certificate of registration",
+    "official_text": "The driver of a motor vehicle shall, on demand by a police officer in uniform, produce his driving licence. Owner or person in charge must produce insurance, fitness certificate, and permit when demanded.",
+    "simplified_explanation": "When asked by a police officer, the driver must show a valid driving licence. The owner or person in charge must also produce insurance certificate, fitness certificate (for transport vehicles), and permit.",
+    "punishment": "Failure to produce required documents may lead to penalties under relevant sections of the Act.",
+    "legal_procedure_guidance": "If documents are not physically available at the time of checking, the law allows submission within the prescribed period (e.g., later production). Always request official challan details.",
+    "keywords": [
+      "produce driving licence",
+      "show RC to police",
+      "insurance certificate demand",
+      "fitness certificate requirement",
+      "challan for no documents",
+      "traffic document check"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "VIII",
+    "chapter_title": "Control of Traffic",
+    "section_number": "132",
+    "section_title": "Duty of driver to stop in certain cases",
+    "official_text": "Driver must stop vehicle when required by police officer in accident cases and provide name and address to affected persons.",
+    "simplified_explanation": "If a vehicle is involved in an accident or causes damage, the driver must stop and provide identity details when required by police or affected person.",
+    "punishment": "Failure to stop may lead to prosecution under relevant traffic or criminal provisions.",
+    "legal_procedure_guidance": "In accident cases, stopping and cooperating reduces legal consequences. If accused of hit-and-run, authorities must establish failure to comply with this section.",
+    "keywords": [
+      "duty to stop vehicle",
+      "hit and run",
+      "provide driver details",
+      "accident stop requirement"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "VIII",
+    "chapter_title": "Control of Traffic",
+    "section_number": "134",
+    "section_title": "Duty of driver in case of accident and injury",
+    "official_text": "Driver must secure medical attention for injured person and report accident to police within 24 hours.",
+    "simplified_explanation": "In case of accident causing injury or property damage, driver must help injured person get medical treatment and inform police within 24 hours.",
+    "punishment": "Failure to assist injured person may lead to additional legal liability.",
+    "legal_procedure_guidance": "Medical aid must be provided immediately. Insurance details must also be shared. Compliance can reduce liability severity.",
+    "keywords": [
+      "accident duty",
+      "medical help after accident",
+      "report accident police",
+      "insurance information accident"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XIII",
+    "chapter_title": "Offences, Penalties and Procedure",
+    "section_number": "177",
+    "section_title": "General provision for punishment of offences",
+    "official_text": "General penalty applies where no specific punishment is provided.",
+    "simplified_explanation": "If someone violates any rule under the Act and no specific punishment is mentioned, general fine applies.",
+    "punishment": "First offence – up to ₹500. Subsequent offence – up to ₹1500.",
+    "legal_procedure_guidance": "Check whether specific penalty section exists. If not, Section 177 applies as default.",
+    "keywords": [
+      "general traffic fine",
+      "default penalty",
+      "motor vehicle act fine",
+      "traffic rule violation fine"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XIII",
+    "chapter_title": "Offences, Penalties and Procedure",
+    "section_number": "183",
+    "section_title": "Driving at excessive speed",
+    "official_text": "Driving above prescribed speed limits is punishable with fines and licence impounding for repeat offences.",
+    "simplified_explanation": "Driving above speed limit attracts monetary fine. Repeated offences may lead to licence impoundment.",
+    "punishment": "LMV – ₹1000 to ₹2000. Heavy vehicles – ₹2000 to ₹4000. Repeat offence – licence impound.",
+    "legal_procedure_guidance": "Speed violation must be proven by mechanical or electronic device evidence. Sole witness opinion is insufficient.",
+    "keywords": [
+      "speeding fine",
+      "overspeed challan",
+      "licence impound speeding",
+      "speed limit violation"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XIII",
+    "chapter_title": "Offences, Penalties and Procedure",
+    "section_number": "184",
+    "section_title": "Driving dangerously",
+    "official_text": "Driving in a manner dangerous to public safety is punishable with imprisonment or fine.",
+    "simplified_explanation": "Dangerous driving includes jumping red light, using mobile while driving, wrong side driving, illegal overtaking, etc.",
+    "punishment": "First offence – 6 months to 1 year imprisonment or fine ₹1000 to ₹5000 or both. Repeat offence – up to 2 years imprisonment or ₹10000 fine.",
+    "legal_procedure_guidance": "Authorities must show that manner of driving created danger or alarm. Video or traffic evidence strengthens prosecution.",
+    "keywords": [
+      "dangerous driving",
+      "jumping red light",
+      "mobile phone driving",
+      "wrong side driving",
+      "rash driving penalty"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XIII",
+    "chapter_title": "Offences, Penalties and Procedure",
+    "section_number": "185",
+    "section_title": "Driving by drunken person or under influence of drugs",
+    "official_text": "Driving with blood alcohol exceeding 30 mg per 100 ml or under influence of drugs is punishable.",
+    "simplified_explanation": "Driving after consuming alcohol beyond legal limit or while under influence of drugs is illegal.",
+    "punishment": "First offence – up to 6 months imprisonment or ₹10000 fine or both. Subsequent offence – up to 2 years imprisonment or ₹15000 fine or both.",
+    "legal_procedure_guidance": "Alcohol level must be proven through breath analyser or laboratory test. Driver has right to proper testing procedure.",
+    "keywords": [
+      "drunk driving",
+      "alcohol limit driving",
+      "breath analyser test",
+      "DUI India",
+      "drug driving offence"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XIII",
+    "chapter_title": "Offences, Penalties and Procedure",
+    "section_number": "194D",
+    "section_title": "Penalty for not wearing protective headgear",
+    "official_text": "Whoever drives or allows a motor cycle to be driven in contravention of section 129 shall be punishable with fine of one thousand rupees and disqualification of licence for three months.",
+    "simplified_explanation": "Riding without a helmet attracts ₹1000 fine and licence disqualification for 3 months.",
+    "punishment": "Fine ₹1000 + licence disqualification for 3 months.",
+    "legal_procedure_guidance": "If licence is seized for helmet violation, verify whether proper challan was issued and whether licence suspension process was followed.",
+    "keywords": [
+      "helmet fine",
+      "no helmet penalty",
+      "bike helmet challan",
+      "licence suspension helmet"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XI",
+    "chapter_title": "Insurance of Motor Vehicles Against Third Party Risks",
+    "section_number": "196",
+    "section_title": "Driving uninsured vehicle",
+    "official_text": "Driving a motor vehicle without valid insurance in contravention of section 146 is punishable.",
+    "simplified_explanation": "Driving a vehicle without valid insurance is illegal.",
+    "punishment": "First offence – up to 3 months imprisonment or ₹2000 fine or both. Subsequent offence – up to 3 months imprisonment or ₹4000 fine or both.",
+    "legal_procedure_guidance": "If accused of no insurance, check policy validity and whether digital proof was available. Insurance must be valid on date of checking.",
+    "keywords": [
+      "no insurance fine",
+      "uninsured vehicle penalty",
+      "third party insurance mandatory",
+      "vehicle insurance offence"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XIII",
+    "chapter_title": "Offences, Penalties and Procedure",
+    "section_number": "200",
+    "section_title": "Composition of certain offences",
+    "official_text": "Certain offences may be compounded by authorised officers upon payment of prescribed amount.",
+    "simplified_explanation": "Some traffic offences can be settled by paying a compounding fine instead of going to court.",
+    "punishment": "Compounding amount determined by State Government notification.",
+    "legal_procedure_guidance": "If offence is compoundable, offender may choose to pay fine directly. However, repeat offences may still affect licence status.",
+    "keywords": [
+      "compound traffic offence",
+      "pay challan settlement",
+      "traffic compounding",
+      "court avoidance traffic fine"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XIII",
+    "chapter_title": "Offences, Penalties and Procedure",
+    "section_number": "206",
+    "section_title": "Power of police officer to impound document",
+    "official_text": "Police officer may seize licence or documents if false or if driver may abscond, and forward to court or licensing authority.",
+    "simplified_explanation": "Police can temporarily seize driving licence in serious offences like speeding, dangerous driving, drunk driving, etc.",
+    "punishment": "Licence may be forwarded for suspension or revocation proceedings under section 19.",
+    "legal_procedure_guidance": "When licence is seized, officer must give temporary acknowledgment. Acknowledgment may or may not permit driving depending on offence.",
+    "keywords": [
+      "licence seized by police",
+      "impound driving licence",
+      "temporary acknowledgement DL",
+      "challan licence confiscated"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XIII",
+    "chapter_title": "Offences, Penalties and Procedure",
+    "section_number": "207",
+    "section_title": "Power to detain vehicles used without registration or permit",
+    "official_text": "Police officer may seize and detain vehicle used without registration, licence, or permit.",
+    "simplified_explanation": "Vehicle can be seized if driven without valid registration, licence, or required permit.",
+    "punishment": "Vehicle detention until compliance and verification.",
+    "legal_procedure_guidance": "Owner may apply to transport authority for release of vehicle by submitting required documents.",
+    "keywords": [
+      "vehicle seized",
+      "vehicle detention police",
+      "no permit vehicle seizure",
+      "release detained vehicle"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "IV",
+    "chapter_title": "Registration of Motor Vehicles",
+    "section_number": "50",
+    "section_title": "Transfer of ownership",
+    "official_text": "Transferor must report transfer within 14 days (same State) or 45 days (other State). Transferee must report within 30 days and submit certificate of registration for endorsement.",
+    "simplified_explanation": "When a vehicle is sold, both seller and buyer must inform the registering authority within prescribed time limits. Ownership must be officially updated in RC.",
+    "punishment": "Failure to report transfer may attract penalty under Section 177 or prescribed late fee.",
+    "legal_procedure_guidance": "Seller must submit transfer report. Buyer must submit RC and prescribed fee. Delay may require payment of penalty. Proper transfer avoids future liability for offences.",
+    "keywords": [
+      "vehicle ownership transfer",
+      "RC transfer process",
+      "sell car RC update",
+      "delay in ownership transfer",
+      "vehicle transfer penalty",
+      "transfer within 14 days"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "IV",
+    "chapter_title": "Registration of Motor Vehicles",
+    "section_number": "52",
+    "section_title": "Alteration in motor vehicle",
+    "official_text": "No owner shall alter a motor vehicle so that the particulars in the registration certificate differ from manufacturer specifications, except as permitted under prescribed conditions.",
+    "simplified_explanation": "Vehicle modifications that change original manufacturer specifications are restricted. Engine swaps, fuel conversion kits (CNG, LPG, electric), or structural changes require approval and must follow prescribed standards.",
+    "punishment": "Unauthorized alteration may attract penalty and possible cancellation or suspension of registration.",
+    "legal_procedure_guidance": "If fined for modification, verify whether alteration was approved by registering authority and whether it complied with Central Government specifications.",
+    "keywords": [
+      "illegal vehicle modification",
+      "engine swap approval",
+      "CNG conversion kit rules",
+      "vehicle structural alteration",
+      "modified exhaust penalty",
+      "retrofit vehicle rules"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "IV",
+    "chapter_title": "Registration of Motor Vehicles",
+    "section_number": "55",
+    "section_title": "Cancellation of registration",
+    "official_text": "Registration may be cancelled if vehicle is destroyed, permanently unusable, fraudulently registered, or permanently removed from India.",
+    "simplified_explanation": "If a vehicle is completely damaged, permanently unusable, fraudulently registered, or exported out of India, its registration can be cancelled by the authority.",
+    "punishment": "Vehicle cannot legally operate once registration is cancelled.",
+    "legal_procedure_guidance": "Owner must report destruction within 14 days. Authority must give opportunity of hearing before cancelling registration due to fraud or unsafe condition.",
+    "keywords": [
+      "RC cancellation",
+      "vehicle total loss registration",
+      "fraudulent registration",
+      "chassis number mismatch",
+      "registration cancellation notice"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XI",
+    "chapter_title": "Insurance of Motor Vehicles Against Third Party Risks",
+    "section_number": "146",
+    "section_title": "Necessity for insurance against third party risks",
+    "official_text": "No motor vehicle shall be used in a public place unless there is a valid policy of insurance complying with this Chapter.",
+    "simplified_explanation": "Every vehicle must have valid third-party insurance before being driven on public roads.",
+    "punishment": "Driving without insurance attracts penalty under Section 196.",
+    "legal_procedure_guidance": "If fined, verify policy validity on date of checking. Paid employees are not liable if unaware of insurance absence.",
+    "keywords": [
+      "third party insurance mandatory",
+      "vehicle insurance required",
+      "no insurance violation",
+      "motor vehicle insurance rule"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XI",
+    "chapter_title": "Insurance of Motor Vehicles Against Third Party Risks",
+    "section_number": "147",
+    "section_title": "Requirement of policies and limits of liability",
+    "official_text": "Insurance policy must cover liability for death, bodily injury, or property damage caused by use of motor vehicle.",
+    "simplified_explanation": "Insurance must cover third-party injury, death, and property damage caused by vehicle use.",
+    "punishment": "Non-compliant policy may invalidate coverage.",
+    "legal_procedure_guidance": "Claimants can seek compensation through Motor Accident Claims Tribunal if covered under valid policy.",
+    "keywords": [
+      "insurance liability",
+      "third party coverage",
+      "motor accident compensation",
+      "insurance coverage limits"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XI",
+    "chapter_title": "Insurance of Motor Vehicles Against Third Party Risks",
+    "section_number": "149",
+    "section_title": "Settlement by insurance company",
+    "official_text": "Insurance company must process and offer settlement within prescribed time upon receiving accident information.",
+    "simplified_explanation": "Insurance company must respond and make compensation offer within 30 days of accident information.",
+    "punishment": "Delay may lead to tribunal adjudication.",
+    "legal_procedure_guidance": "If settlement offer is rejected, matter goes to Claims Tribunal for adjudication.",
+    "keywords": [
+      "insurance claim settlement",
+      "motor accident claim procedure",
+      "insurance offer 30 days",
+      "claims tribunal process"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XIII",
+    "chapter_title": "Offences, Penalties and Procedure",
+    "section_number": "181",
+    "section_title": "Driving vehicles in contravention of section 3 or 4",
+    "official_text": "Driving without licence or underage driving is punishable.",
+    "simplified_explanation": "Driving without valid licence or underage driving attracts strict penalties.",
+    "punishment": "Imprisonment up to 3 months or fine up to ₹5000 or both.",
+    "legal_procedure_guidance": "Accused may verify licence validity and age proof during proceedings.",
+    "keywords": [
+      "driving without licence fine",
+      "underage driving penalty",
+      "no DL punishment"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XIII",
+    "chapter_title": "Offences, Penalties and Procedure",
+    "section_number": "192A",
+    "section_title": "Using vehicle without permit",
+    "official_text": "Using vehicle without valid permit or violating permit conditions is punishable.",
+    "simplified_explanation": "Commercial or transport vehicles must have valid permit. Using without permit leads to penalty.",
+    "punishment": "First offence – up to 6 months imprisonment or ₹10000 fine or both. Subsequent – higher punishment.",
+    "legal_procedure_guidance": "Permit validity and route authorization should be verified before prosecution.",
+    "keywords": [
+      "vehicle without permit",
+      "transport permit violation",
+      "commercial vehicle offence"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XIII",
+    "chapter_title": "Offences, Penalties and Procedure",
+    "section_number": "202",
+    "section_title": "Power to arrest without warrant",
+    "official_text": "Police officer may arrest without warrant for offences under sections 184, 185, or 197.",
+    "simplified_explanation": "Police can arrest without warrant for dangerous driving or drunk driving offences.",
+    "punishment": "Arrest procedure applies; medical examination required in drunk driving cases.",
+    "legal_procedure_guidance": "In case of drunk driving arrest, medical examination must occur within two hours.",
+    "keywords": [
+      "traffic arrest without warrant",
+      "drunk driving arrest",
+      "dangerous driving arrest"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XIII",
+    "chapter_title": "Offences, Penalties and Procedure",
+    "section_number": "203",
+    "section_title": "Breath tests",
+    "official_text": "Police may require breath test if suspected of drunk driving.",
+    "simplified_explanation": "Police can conduct breath analyser test if there is reasonable suspicion of alcohol consumption.",
+    "punishment": "Positive result may lead to arrest under Section 185.",
+    "legal_procedure_guidance": "Breath test must be conducted as soon as practicable. Medical practitioner involvement required in hospital cases.",
+    "keywords": [
+      "breath analyser test",
+      "alcohol test driving",
+      "DUI test India",
+      "traffic alcohol check",
+      "breath analyser refusal",
+      "DUI breath test evidence",
+      "alcohol test admissible",
+      "traffic alcohol arrest"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XIII",
+    "chapter_title": "Offences, Penalties and Procedure",
+    "section_number": "204",
+    "section_title": "Laboratory test",
+    "official_text": "Person arrested under section 203 may be required to provide blood sample for laboratory analysis. Laboratory results are admissible as evidence.",
+    "simplified_explanation": "If breath test indicates alcohol or is refused, police can require a blood sample for laboratory testing. The result can be used in court.",
+    "punishment": "Positive result may confirm offence under Section 185.",
+    "legal_procedure_guidance": "Blood sample must be taken by registered medical practitioner. Female safeguards apply. Medical officer may object if test affects patient care.",
+    "keywords": [
+      "blood alcohol test",
+      "laboratory DUI test",
+      "drunk driving medical test",
+      "alcohol evidence court"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_crime",
+    "chapter_number": "IX",
+    "chapter_title": "Penalties, Compensation and Adjudication",
+    "section_number": "43",
+    "section_title": "Penalty and compensation for damage to computer system",
+    "official_text": "Unauthorized access, downloading, copying, introducing virus, damaging systems, disrupting networks or stealing source code without permission attracts liability.",
+    "simplified_explanation": "If someone hacks your system, steals your data, installs malware, disrupts your network, or damages your computer without permission, they must pay compensation.",
+    "punishment": "Civil liability – Compensation payable to affected person.",
+    "offence_type": "Civil",
+    "cognizable": "No",
+    "bailable": "Not applicable (Civil)",
+    "triable_by": "Adjudicating Officer under IT Act",
+    "legal_procedure_guidance": "Victim may file complaint before the Adjudicating Officer for compensation. Preserve logs, screenshots, IP traces, and device evidence.",
+    "related_sections": [
+      "Section 66 IT Act"
+    ],
+    "keywords": [
+      "unauthorized access",
+      "data theft",
+      "virus attack",
+      "system damage",
+      "cyber compensation"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_crime",
+    "chapter_number": "XI",
+    "chapter_title": "Offences",
+    "section_number": "65",
+    "section_title": "Tampering with computer source documents",
+    "official_text": "Knowingly concealing, destroying, or altering computer source code required by law is punishable.",
+    "simplified_explanation": "If someone intentionally alters or hides legally required source code, it is a criminal offence.",
+    "punishment": "Imprisonment up to 3 years OR fine up to ₹2,00,000 OR both.",
+    "offence_type": "Criminal",
+    "cognizable": "Yes",
+    "bailable": "Yes",
+    "triable_by": "Magistrate",
+    "legal_procedure_guidance": "Complaint can be filed at Cyber Crime Police Station. Maintain forensic records and audit trails.",
+    "related_sections": [],
+    "keywords": [
+      "source code tampering",
+      "code alteration",
+      "cyber offence"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_crime",
+    "chapter_number": "XI",
+    "chapter_title": "Offences",
+    "section_number": "66",
+    "section_title": "Computer related offences",
+    "official_text": "Acts under Section 43 done dishonestly or fraudulently are criminal offences.",
+    "simplified_explanation": "If hacking or data theft is done with criminal intent, it becomes punishable under criminal law.",
+    "punishment": "Imprisonment up to 3 years OR fine up to ₹5,00,000 OR both.",
+    "offence_type": "Criminal",
+    "cognizable": "Yes",
+    "bailable": "Yes",
+    "triable_by": "Magistrate",
+    "legal_procedure_guidance": "File FIR at Cyber Crime Police Station or through national cybercrime portal. Preserve digital evidence and financial transaction details.",
+    "related_sections": [
+      "Section 43 IT Act"
+    ],
+    "keywords": [
+      "criminal hacking",
+      "cyber fraud",
+      "unauthorized access crime"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_crime",
+    "chapter_number": "XI",
+    "chapter_title": "Offences",
+    "section_number": "66B",
+    "section_title": "Receiving stolen computer resource",
+    "official_text": "Receiving or retaining stolen computer resource knowing it to be stolen is punishable.",
+    "simplified_explanation": "If someone knowingly keeps or uses stolen digital data or devices, it is a crime.",
+    "punishment": "Imprisonment up to 3 years OR fine up to ₹1,00,000 OR both.",
+    "offence_type": "Criminal",
+    "cognizable": "Yes",
+    "bailable": "Yes",
+    "triable_by": "Magistrate",
+    "legal_procedure_guidance": "Victim should file FIR. Evidence like device ownership proof and digital trail should be preserved.",
+    "related_sections": [],
+    "keywords": [
+      "stolen data",
+      "stolen device",
+      "cyber property offence"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_crime",
+    "chapter_number": "XI",
+    "chapter_title": "Offences",
+    "section_number": "66C",
+    "section_title": "Identity theft",
+    "official_text": "Fraudulent use of electronic signature, password or unique identification feature is punishable.",
+    "simplified_explanation": "Using someone else's password, OTP, digital signature, Aadhaar, or login credentials is identity theft.",
+    "punishment": "Imprisonment up to 3 years AND fine up to ₹1,00,000.",
+    "offence_type": "Criminal",
+    "cognizable": "Yes",
+    "bailable": "Yes",
+    "triable_by": "Magistrate",
+    "legal_procedure_guidance": "File complaint immediately at cybercrime portal. Block compromised accounts and inform service provider.",
+    "related_sections": [
+      "Section 66D IT Act"
+    ],
+    "keywords": [
+      "identity theft",
+      "password misuse",
+      "OTP fraud",
+      "digital identity crime"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_crime",
+    "chapter_number": "XI",
+    "chapter_title": "Offences",
+    "section_number": "66D",
+    "section_title": "Cheating by personation using computer resource",
+    "official_text": "Cheating by impersonation using computer or communication device is punishable.",
+    "simplified_explanation": "Online scams where someone pretends to be bank officer, company executive, or another person are covered here.",
+    "punishment": "Imprisonment up to 3 years AND fine up to ₹1,00,000.",
+    "offence_type": "Criminal",
+    "cognizable": "Yes",
+    "bailable": "Yes",
+    "triable_by": "Magistrate",
+    "legal_procedure_guidance": "Victim should report immediately on national cybercrime portal and inform bank within golden hour for fund freeze.",
+    "related_sections": [
+      "IPC 420"
+    ],
+    "keywords": [
+      "online scam",
+      "phishing",
+      "bank fraud",
+      "impersonation"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_crime",
+    "chapter_number": "XI",
+    "chapter_title": "Offences",
+    "section_number": "66E",
+    "section_title": "Violation of privacy",
+    "official_text": "Capturing, publishing or transmitting private images without consent is punishable.",
+    "simplified_explanation": "Sharing or recording someone's private images without consent is a criminal offence.",
+    "punishment": "Imprisonment up to 3 years OR fine up to ₹2,00,000 OR both.",
+    "offence_type": "Criminal",
+    "cognizable": "Yes",
+    "bailable": "Yes",
+    "triable_by": "Magistrate",
+    "legal_procedure_guidance": "Victim may approach cybercrime police. Immediate takedown request should be sent to platform.",
+    "related_sections": [
+      "IPC 354C"
+    ],
+    "keywords": [
+      "privacy breach",
+      "non-consensual image",
+      "cyber harassment",
+      "privacy violation",
+      "private image",
+      "non-consensual sharing"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_crime",
+    "section_number": "67",
+    "section_title": "Publishing or transmitting obscene material",
+    "offence_type": "Criminal",
+    "punishment": "1st Conviction: Up to 3 years imprisonment + fine up to ₹5,00,000. Subsequent: Up to 5 years + fine up to ₹10,00,000.",
+    "cognizable": "Yes",
+    "bailable": "Generally Bailable (First offence)",
+    "triable_by": "Magistrate",
+    "simplified_explanation": "Publishing or transmitting obscene electronic content is punishable.",
+    "legal_procedure_guidance": "File FIR at Cyber Crime Police Station. Preserve URLs, screenshots, metadata, and device evidence.",
+    "related_sections": [
+      "IPC 292"
+    ],
+    "keywords": [
+      "obscene content online",
+      "sending obscene video",
+      "electronic obscenity",
+      "pornographic sharing",
+      "IT Act 67 case"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_crime",
+    "section_number": "67A",
+    "section_title": "Publishing sexually explicit material",
+    "offence_type": "Criminal",
+    "punishment": "1st Conviction: Up to 5 years imprisonment + fine up to ₹10,00,000. Subsequent: Up to 7 years + fine up to ₹10,00,000.",
+    "cognizable": "Yes",
+    "bailable": "Generally Non-Bailable",
+    "triable_by": "Magistrate",
+    "simplified_explanation": "Publishing sexually explicit acts electronically is a serious offence.",
+    "legal_procedure_guidance": "Immediate FIR recommended. Digital forensic seizure common.",
+    "related_sections": [
+      "IPC 292"
+    ],
+    "keywords": [
+      "sexually explicit video",
+      "hardcore pornography",
+      "explicit act transmission",
+      "adult explicit sharing",
+      "IT Act 67A",
+      "sexually explicit content",
+      "online pornography",
+      "digital obscenity"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_crime",
+    "section_number": "67B",
+    "section_title": "Child sexually explicit material",
+    "offence_type": "Criminal",
+    "punishment": "1st Conviction: Up to 5 years imprisonment + fine up to ₹10,00,000. Subsequent: Up to 7 years + fine up to ₹10,00,000.",
+    "cognizable": "Yes",
+    "bailable": "Non-Bailable",
+    "triable_by": "Special Court (POCSO linked)",
+    "simplified_explanation": "Creation, sharing, browsing or facilitating child sexual abuse material is a grave offence.",
+    "legal_procedure_guidance": "Immediate police complaint required. Device isolation advised.",
+    "related_sections": [
+      "POCSO Act"
+    ],
+    "keywords": [
+      "child pornography",
+      "CSAM",
+      "minor explicit content",
+      "online grooming",
+      "IT Act 67B",
+      "minor exploitation"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_regulation",
+    "section_number": "67C",
+    "section_title": "Retention of information by intermediaries",
+    "offence_type": "Criminal (Non-compliance)",
+    "punishment": "Imprisonment up to 3 years and fine.",
+    "cognizable": "No",
+    "bailable": "Yes",
+    "triable_by": "Magistrate",
+    "simplified_explanation": "Intermediaries must preserve information as prescribed by law.",
+    "legal_procedure_guidance": "Action initiated by government authority against non-compliant intermediary.",
+    "related_sections": [
+      "Section 79 IT Act"
+    ],
+    "keywords": [
+      "data retention law",
+      "intermediary log storage",
+      "ISP compliance",
+      "Section 67C IT Act"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "data_privacy",
+    "section_number": "72",
+    "section_title": "Breach of confidentiality and privacy",
+    "offence_type": "Criminal",
+    "punishment": "Imprisonment up to 2 years OR fine up to ₹1,00,000 OR both.",
+    "cognizable": "No",
+    "bailable": "Yes",
+    "triable_by": "Magistrate",
+    "simplified_explanation": "Unauthorized disclosure of information obtained under lawful authority is punishable.",
+    "legal_procedure_guidance": "Complaint may be filed if confidential investigation data is leaked.",
+    "related_sections": [],
+    "keywords": [
+      "confidential data leak",
+      "privacy breach by officer",
+      "unauthorized disclosure",
+      "IT Act 72"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "data_privacy",
+    "section_number": "72A",
+    "section_title": "Disclosure of information in breach of lawful contract",
+    "offence_type": "Criminal",
+    "punishment": "Imprisonment up to 3 years OR fine up to ₹5,00,000 OR both.",
+    "cognizable": "No",
+    "bailable": "Yes",
+    "triable_by": "Magistrate",
+    "simplified_explanation": "Service providers disclosing personal data in breach of contract causing wrongful loss are punishable.",
+    "legal_procedure_guidance": "Victim may file criminal complaint and seek civil compensation separately.",
+    "related_sections": [
+      "Section 43A IT Act"
+    ],
+    "keywords": [
+      "data leak by company",
+      "breach of contract data",
+      "corporate data misuse",
+      "IT Act 72A"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "data_privacy",
+    "section_number": "43A",
+    "section_title": "Failure to protect data",
+    "offence_type": "Civil",
+    "punishment": "Compensation payable to affected person.",
+    "cognizable": "No",
+    "bailable": "N/A",
+    "triable_by": "Adjudicating Officer",
+    "simplified_explanation": "Company negligent in protecting sensitive personal data must compensate victims.",
+    "legal_procedure_guidance": "Requires proof of negligence and wrongful loss.",
+    "related_sections": [
+      "SPDI Rules 2011"
+    ],
+    "keywords": [
+      "data breach compensation",
+      "corporate negligence",
+      "sensitive personal data loss",
+      "Section 43A claim"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_security",
+    "section_number": "70A",
+    "section_title": "National nodal agency",
+    "offence_type": "Administrative",
+    "punishment": "N/A",
+    "cognizable": "N/A",
+    "bailable": "N/A",
+    "triable_by": "N/A",
+    "simplified_explanation": "Government designates national agency for Critical Information Infrastructure protection.",
+    "legal_procedure_guidance": "Defines CII protection authority structure.",
+    "related_sections": [
+      "Section 70"
+    ],
+    "keywords": [
+      "critical infrastructure protection",
+      "NCIIPC",
+      "national cyber agency",
+      "Section 70A"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_security",
+    "section_number": "70B",
+    "section_title": "CERT-In",
+    "offence_type": "Criminal (Non-compliance)",
+    "punishment": "Imprisonment up to 1 year OR fine up to ₹1 Crore OR both.",
+    "cognizable": "No",
+    "bailable": "Yes",
+    "triable_by": "Magistrate",
+    "simplified_explanation": "CERT-In is national cyber incident response agency.",
+    "legal_procedure_guidance": "Non-compliance requires authorised complaint.",
+    "related_sections": [
+      "CERT-In Rules 2013"
+    ],
+    "keywords": [
+      "CERT-In",
+      "cyber incident response",
+      "cyber alert compliance",
+      "Section 70B"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_regulation",
+    "section_number": "69A",
+    "section_title": "Blocking public access",
+    "offence_type": "Criminal (Non-compliance)",
+    "punishment": "Imprisonment up to 7 years AND fine.",
+    "cognizable": "No",
+    "bailable": "Generally Non-Bailable",
+    "triable_by": "Magistrate",
+    "simplified_explanation": "Government may block online content for national security reasons.",
+    "legal_procedure_guidance": "Blocking follows 2009 Rules.",
+    "related_sections": [
+      "IT Blocking Rules 2009"
+    ],
+    "keywords": [
+      "website blocking",
+      "content ban order",
+      "national security block",
+      "Section 69A"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "cyber_regulation",
+    "section_number": "69B",
+    "section_title": "Traffic data monitoring",
+    "offence_type": "Criminal (Non-compliance)",
+    "punishment": "Imprisonment up to 1 year OR fine up to ₹1 Crore OR both.",
+    "cognizable": "No",
+    "bailable": "Yes",
+    "triable_by": "Magistrate",
+    "simplified_explanation": "Government may collect traffic metadata for cyber security.",
+    "legal_procedure_guidance": "Applies to metadata, not direct content.",
+    "related_sections": [],
+    "keywords": [
+      "traffic data collection",
+      "metadata surveillance",
+      "network monitoring",
+      "Section 69B"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "adjudication",
+    "section_number": "46",
+    "section_title": "Power to adjudicate",
+    "offence_type": "Civil / Administrative",
+    "punishment": "Imposition of penalty or compensation.",
+    "cognizable": "No",
+    "bailable": "N/A",
+    "triable_by": "Adjudicating Officer",
+    "simplified_explanation": "Adjudicating Officer handles civil cyber disputes up to ₹5 crore.",
+    "legal_procedure_guidance": "Proceedings have civil court powers.",
+    "related_sections": [
+      "Section 43"
+    ],
+    "keywords": [
+      "adjudicating officer",
+      "cyber compensation case",
+      "IT Act civil claim",
+      "Section 46"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "adjudication",
+    "section_number": "48",
+    "section_title": "Appellate Tribunal",
+    "offence_type": "Administrative",
+    "punishment": "N/A",
+    "cognizable": "N/A",
+    "bailable": "N/A",
+    "triable_by": "TDSAT",
+    "simplified_explanation": "TDSAT acts as Appellate Tribunal for IT Act matters.",
+    "legal_procedure_guidance": "Appeal lies from Adjudicating Officer to TDSAT.",
+    "related_sections": [
+      "TRAI Act 1997"
+    ],
+    "keywords": [
+      "TDSAT appeal",
+      "cyber tribunal",
+      "IT appellate authority",
+      "Section 48"
+    ]
+  },
+  {
+    "act_name": "Information Technology Act, 2000",
+    "domain": "adjudication",
+    "section_number": "57",
+    "section_title": "Appeal to Appellate Tribunal",
+    "offence_type": "Procedural",
+    "punishment": "N/A",
+    "cognizable": "N/A",
+    "bailable": "N/A",
+    "triable_by": "TDSAT",
+    "simplified_explanation": "Aggrieved person may appeal within 45 days.",
+    "legal_procedure_guidance": "Delay may be condoned upon sufficient cause.",
+    "related_sections": [],
+    "keywords": [
+      "45 day appeal limit",
+      "IT Act appeal process",
+      "cyber appeal filing",
+      "Section 57"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVII",
+    "chapter_title": "Offences Against Property",
+    "section_number": "378",
+    "section_title": "Theft (Definition)",
+    "offence_type": "Criminal",
+    "punishment": "Punishable under Section 379 IPC.",
+    "cognizable": "Refer Section 379",
+    "bailable": "Refer Section 379",
+    "triable_by": "Any Magistrate",
+    "simplified_explanation": "Theft occurs when someone dishonestly moves movable property out of another person’s possession without consent.",
+    "legal_procedure_guidance": "For punishment and arrest details, refer Section 379 IPC.",
+    "related_sections": [
+      "Section 379 IPC"
+    ],
+    "keywords": [
+      "theft definition",
+      "dishonest taking",
+      "movable property theft",
+      "without consent taking",
+      "Section 378 IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVII",
+    "chapter_title": "Offences Against Property",
+    "section_number": "379",
+    "section_title": "Punishment for theft",
+    "offence_type": "Criminal",
+    "punishment": "Imprisonment up to 3 years OR fine OR both.",
+    "cognizable": "Yes",
+    "bailable": "Yes (Bailable offence)",
+    "triable_by": "Any Magistrate",
+    "simplified_explanation": "Provides punishment for the offence of theft defined under Section 378.",
+    "legal_procedure_guidance": "FIR can be filed at police station. Police can investigate without court order. Bail may be granted as it is bailable.",
+    "related_sections": [
+      "Section 378 IPC"
+    ],
+    "keywords": [
+      "theft punishment",
+      "Section 379 IPC",
+      "stolen property case",
+      "theft FIR procedure"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVII",
+    "chapter_title": "Offences Against Property",
+    "section_number": "403",
+    "section_title": "Dishonest misappropriation of property",
+    "offence_type": "Criminal",
+    "punishment": "Imprisonment up to 2 years OR fine OR both.",
+    "cognizable": "No (Non-cognizable)",
+    "bailable": "Yes",
+    "triable_by": "Any Magistrate",
+    "simplified_explanation": "When someone dishonestly keeps or converts movable property for their own use after coming into possession lawfully or by finding it.",
+    "legal_procedure_guidance": "Police require Magistrate order to investigate as it is non-cognizable. Complaint can be filed before Magistrate.",
+    "related_sections": [
+      "Section 404 IPC"
+    ],
+    "keywords": [
+      "misappropriation",
+      "finder of goods offence",
+      "dishonest conversion",
+      "Section 403 IPC",
+      "conversion"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVII",
+    "chapter_title": "Of Offences Against Property",
+    "section_number": "405",
+    "section_title": "Criminal breach of trust",
+    "official_text": "Whoever, being in any manner entrusted with property, or with any dominion over property, dishonestly misappropriates or converts to his own use that property... commits criminal breach of trust.",
+    "simplified_explanation": "Criminal Breach of Trust (CBT) occurs when someone is legally entrusted with property (given charge of it) but then dishonestly uses it for themselves or breaks the rules of that trust. This includes employers who deduct PF or ESI from employees' wages but fail to deposit it with the government.",
+    "punishment": "Punishable under Section 406 (Up to 3 years imprisonment).",
+    "offence_type": "Criminal",
+    "cognizable": "Yes",
+    "bailable": "No (Non-bailable)",
+    "triable_by": "Magistrate of the First Class",
+    "legal_procedure_guidance": "Proof of 'entrustment' is crucial. Documents showing the property was handed over (contracts, receipts) must be preserved.",
+    "related_sections": [
+      "Section 406 IPC",
+      "Section 409 IPC"
+    ],
+    "keywords": [
+      "breach of trust",
+      "misappropriation",
+      "entrustment",
+      "PF default",
+      "employer contribution"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVII",
+    "chapter_title": "Of Offences Against Property",
+    "section_number": "406",
+    "section_title": "Punishment for criminal breach of trust",
+    "official_text": "Whoever commits criminal breach of trust shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+    "simplified_explanation": "This section prescribes the punishment for the offence defined in Section 405.",
+    "punishment": "Imprisonment up to 3 years OR fine OR both.",
+    "offence_type": "Criminal",
+    "cognizable": "Yes",
+    "bailable": "No",
+    "triable_by": "Magistrate of the First Class",
+    "legal_procedure_guidance": "FIR can be filed. Police can arrest without warrant.",
+    "related_sections": [
+      "Section 405 IPC"
+    ],
+    "keywords": [
+      "punishment",
+      "sentencing",
+      "breach of trust"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "white_collar_crime",
+    "chapter_number": "XVII",
+    "chapter_title": "Of Offences Against Property",
+    "section_number": "409",
+    "section_title": "Criminal breach of trust by public servant, or by banker, merchant or agent",
+    "official_text": "Whoever, being in any manner entrusted with property... in his capacity of a public servant or in the way of his business as a banker, merchant... commits criminal breach of trust... shall be punished with imprisonment for life, or... extend to ten years.",
+    "simplified_explanation": "If a public servant, banker, or professional agent (who is trusted more by society) commits breach of trust, the punishment is much more severe than for a regular person.",
+    "punishment": "Imprisonment for Life OR Imprisonment up to 10 years AND fine.",
+    "offence_type": "Criminal",
+    "cognizable": "Yes",
+    "bailable": "No",
+    "triable_by": "Magistrate of the First Class",
+    "legal_procedure_guidance": "Higher burden of proof on the accused to account for the property. Sanction may be required to prosecute public servants.",
+    "related_sections": [
+      "Section 405 IPC"
+    ],
+    "keywords": [
+      "banker fraud",
+      "public servant corruption",
+      "agent liability",
+      "aggravated breach of trust"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVII",
+    "chapter_title": "Of Offences Against Property",
+    "section_number": "415",
+    "section_title": "Cheating",
+    "official_text": "Whoever, by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property... is said to cheat.",
+    "simplified_explanation": "Cheating involves deceiving someone to get them to do something they wouldn't otherwise do, causing them harm (financial, physical, or reputational).",
+    "punishment": "Punishable under Section 417 (Up to 1 year).",
+    "offence_type": "Criminal",
+    "cognizable": "No (Non-cognizable)",
+    "bailable": "Yes",
+    "triable_by": "Any Magistrate",
+    "legal_procedure_guidance": "Since simple cheating (415/417) is non-cognizable, police need a warrant. Usually requires filing a complaint before a Magistrate.",
+    "related_sections": [
+      "Section 417 IPC",
+      "Section 420 IPC"
+    ],
+    "keywords": [
+      "deception",
+      "fraud",
+      "inducement",
+      "dishonesty"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVII",
+    "chapter_title": "Of Offences Against Property",
+    "section_number": "418",
+    "section_title": "Cheating with knowledge that wrongful loss may ensue to person whose interest offender is bound to protect",
+    "official_text": "Whoever cheats with the knowledge that he is likely thereby to cause wrongful loss to a person whose interest... he was bound... to protect, shall be punished.",
+    "simplified_explanation": "This applies when the cheater has a special duty to protect the victim (e.g., a lawyer cheating their client, or a guardian cheating their ward).",
+    "punishment": "Imprisonment up to 3 years OR fine OR both.",
+    "offence_type": "Criminal",
+    "cognizable": "Yes",
+    "bailable": "Yes",
+    "triable_by": "Magistrate of the First Class",
+    "legal_procedure_guidance": "Requires proving the legal or contractual relationship protecting the victim's interest.",
+    "related_sections": [],
+    "keywords": [
+      "fiduciary duty",
+      "breach of protection",
+      "client fraud"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "white_collar_crime",
+    "chapter_number": "XVII",
+    "chapter_title": "Of Offences Against Property",
+    "section_number": "420",
+    "section_title": "Cheating and dishonestly inducing delivery of property",
+    "official_text": "Whoever cheats and thereby dishonestly induces the person deceived to deliver any property to any person, or to make, alter or destroy the whole or any part of a valuable security... shall be punished.",
+    "simplified_explanation": "Commonly known as '420', this is a serious form of cheating where the deception successfully leads to the victim handing over property (money, jewelry) or signing a valuable document.",
+    "punishment": "Imprisonment up to 7 years AND fine.",
+    "offence_type": "Criminal",
+    "cognizable": "Yes",
+    "bailable": "No",
+    "triable_by": "Magistrate of the First Class",
+    "legal_procedure_guidance": "One of the most common FIRs. Requires proof of dishonest intention *at the time of the inducement*.",
+    "related_sections": [
+      "Section 415 IPC"
+    ],
+    "keywords": [
+      "420 case",
+      "financial fraud",
+      "scam",
+      "property inducement"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVIII",
+    "chapter_title": "Of Offences Relating to Documents and to Property Marks",
+    "section_number": "463",
+    "section_title": "Forgery",
+    "official_text": "Whoever makes any false document... with intent to cause damage or injury... or to support any claim or title... commits forgery.",
+    "simplified_explanation": "Forgery is the crime of creating a false document (or part of it) with the specific intent to cause damage, commit fraud, or support a fake legal claim.",
+    "punishment": "Punishable under Section 465 (Up to 2 years).",
+    "offence_type": "Criminal",
+    "cognizable": "Yes (if for cheating)",
+    "bailable": "Yes",
+    "triable_by": "Magistrate of the First Class",
+    "legal_procedure_guidance": "Forensic handwriting or document analysis is usually required.",
+    "related_sections": [
+      "Section 464 IPC",
+      "Section 465 IPC"
+    ],
+    "keywords": [
+      "fake document",
+      "fraudulent claim",
+      "signature forgery"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVIII",
+    "chapter_title": "Of Offences Relating to Documents and to Property Marks",
+    "section_number": "464",
+    "section_title": "Making a false document",
+    "official_text": "A person is said to make a false document... Who dishonestly or fraudulently makes, signs... or alters a document... or causes any person to sign... knowing that such person... cannot know the contents.",
+    "simplified_explanation": "Defines *how* a document is falsified: 1. Signing/making it pretending to be someone else. 2. Altering a genuine document (changing numbers/words). 3. Getting a drunk/mentally unsound person to sign it.",
+    "punishment": "N/A (Definition for Section 463)",
+    "offence_type": "Criminal",
+    "cognizable": "N/A",
+    "bailable": "N/A",
+    "triable_by": "N/A",
+    "legal_procedure_guidance": "Used to establish the actus reus (guilty act) of Forgery.",
+    "related_sections": [
+      "Section 463 IPC"
+    ],
+    "keywords": [
+      "document alteration",
+      "false signature",
+      "electronic record tampering"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVII",
+    "chapter_title": "Offences Against Property",
+    "section_number": "417",
+    "section_title": "Punishment for cheating",
+    "punishment": "Imprisonment up to 1 year OR fine OR both.",
+    "offence_type": "Criminal",
+    "cognizable": "No (Non-cognizable)",
+    "bailable": "Yes",
+    "triable_by": "Any Magistrate",
+    "keywords": [
+      "cheating",
+      "simple cheating",
+      "deception",
+      "Section 417 IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVII",
+    "chapter_title": "Offences Against Property",
+    "section_number": "419",
+    "section_title": "Cheating by personation",
+    "punishment": "Imprisonment up to 3 years OR fine OR both.",
+    "offence_type": "Criminal",
+    "cognizable": "No (Non-cognizable)",
+    "bailable": "Yes",
+    "triable_by": "Any Magistrate",
+    "keywords": [
+      "impersonation",
+      "identity fraud",
+      "fake identity",
+      "Section 419 IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "bankruptcy_fraud",
+    "chapter_number": "XVII",
+    "chapter_title": "Offences Against Property",
+    "section_number": "421",
+    "section_title": "Fraudulent removal or concealment of property to prevent distribution among creditors",
+    "punishment": "Imprisonment up to 2 years OR fine OR both.",
+    "offence_type": "Criminal",
+    "cognizable": "No",
+    "bailable": "Yes",
+    "triable_by": "Any Magistrate",
+    "keywords": [
+      "bankruptcy fraud",
+      "asset concealment",
+      "creditor fraud",
+      "Section 421 IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "bankruptcy_fraud",
+    "chapter_number": "XVII",
+    "chapter_title": "Offences Against Property",
+    "section_number": "424",
+    "section_title": "Dishonest or fraudulent removal or concealment of property",
+    "punishment": "Imprisonment up to 2 years OR fine OR both.",
+    "offence_type": "Criminal",
+    "cognizable": "No",
+    "bailable": "Yes",
+    "triable_by": "Any Magistrate",
+    "keywords": [
+      "concealing property",
+      "asset evasion",
+      "Section 424 IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVII",
+    "chapter_title": "Offences Against Property",
+    "section_number": "404",
+    "section_title": "Dishonest misappropriation of property of deceased person",
+    "punishment": "Imprisonment up to 3 years AND fine (7 years if offender was servant).",
+    "offence_type": "Criminal",
+    "cognizable": "No",
+    "bailable": "Yes",
+    "triable_by": "Magistrate of the First Class",
+    "keywords": [
+      "misappropriation after death",
+      "servant theft",
+      "Section 404 IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "forgery",
+    "chapter_number": "XVIII",
+    "chapter_title": "Offences Relating to Documents",
+    "section_number": "465",
+    "section_title": "Punishment for forgery",
+    "punishment": "Imprisonment up to 2 years OR fine OR both.",
+    "offence_type": "Criminal",
+    "cognizable": "No",
+    "bailable": "Yes",
+    "triable_by": "Magistrate of the First Class",
+    "keywords": [
+      "forgery",
+      "fake document",
+      "Section 465 IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "forgery",
+    "chapter_number": "XVIII",
+    "chapter_title": "Offences Relating to Documents",
+    "section_number": "466",
+    "section_title": "Forgery of record of Court or public register",
+    "punishment": "Imprisonment up to 7 years AND fine.",
+    "offence_type": "Criminal",
+    "cognizable": "No",
+    "bailable": "No",
+    "triable_by": "Court of Session",
+    "keywords": [
+      "court record forgery",
+      "public register fraud",
+      "Section 466 IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "forgery",
+    "chapter_number": "XVIII",
+    "chapter_title": "Offences Relating to Documents",
+    "section_number": "467",
+    "section_title": "Forgery of valuable security, will, etc.",
+    "punishment": "Imprisonment for Life OR up to 10 years AND fine.",
+    "offence_type": "Criminal",
+    "cognizable": "No",
+    "bailable": "No",
+    "triable_by": "Court of Session",
+    "keywords": [
+      "forged will",
+      "valuable security forgery",
+      "Section 467 IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "forgery",
+    "chapter_number": "XVIII",
+    "chapter_title": "Offences Relating to Documents",
+    "section_number": "468",
+    "section_title": "Forgery for purpose of cheating",
+    "punishment": "Imprisonment up to 7 years AND fine.",
+    "offence_type": "Criminal",
+    "cognizable": "No",
+    "bailable": "No",
+    "triable_by": "Magistrate of the First Class",
+    "keywords": [
+      "forgery for cheating",
+      "loan fraud",
+      "Section 468 IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "forgery",
+    "chapter_number": "XVIII",
+    "chapter_title": "Offences Relating to Documents",
+    "section_number": "471",
+    "section_title": "Using forged document as genuine",
+    "punishment": "Same punishment as for the forgery of such document.",
+    "offence_type": "Criminal",
+    "cognizable": "Depends on underlying forgery section",
+    "bailable": "Depends on underlying forgery section",
+    "triable_by": "Depends on underlying forgery section",
+    "keywords": [
+      "using forged document",
+      "fake certificate use",
+      "Section 471 IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_intimidation",
+    "chapter_number": "XXII",
+    "chapter_title": "Criminal Intimidation",
+    "section_number": "503",
+    "section_title": "Criminal intimidation (Definition)",
+    "punishment": "Punishable under Section 506 IPC.",
+    "offence_type": "Criminal",
+    "cognizable": "Refer Section 506",
+    "bailable": "Refer Section 506",
+    "triable_by": "Refer Section 506",
+    "keywords": [
+      "threat",
+      "intimidation",
+      "blackmail",
+      "Section 503 IPC",
+      "criminal intimidation",
+      "coercion"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "forgery",
+    "chapter_number": "XVIII",
+    "chapter_title": "Of Offences Relating to Documents and to Property Marks",
+    "section_number": "469",
+    "section_title": "Forgery for purpose of harming reputation",
+    "official_text": "Whoever commits forgery, intending that the document forged shall harm the reputation of any party, or knowing that it is likely to be used for that purpose, shall be punished with imprisonment of either description for a term which may extend to three years, and shall also be liable to fine.",
+    "simplified_explanation": "If someone creates a fake document specifically to damage another person’s reputation, or knows it will likely be used to harm reputation, it amounts to an offence under this section.",
+    "punishment": "Imprisonment up to 3 years AND fine.",
+    "offence_type": "Criminal",
+    "cognizable": "Non-cognizable",
+    "bailable": "Bailable",
+    "triable_by": "Magistrate of the First Class",
+    "legal_procedure_guidance": "Victim must prove forgery + intention to harm reputation. Often linked with defamation evidence.",
+    "keywords": [
+      "Section 469 IPC",
+      "forgery harming reputation",
+      "fake defamatory document",
+      "reputation damage by forgery",
+      "malicious document creation"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "forgery",
+    "chapter_number": "XVIII",
+    "chapter_title": "Of Offences Relating to Documents and to Property Marks",
+    "section_number": "470",
+    "section_title": "Forged document",
+    "official_text": "A false document made wholly or in part by forgery is designated as a 'forged document'.",
+    "simplified_explanation": "Any document that has been made or altered dishonestly through forgery is legally called a 'forged document'.",
+    "punishment": "N/A (Definition Section)",
+    "offence_type": "Definition",
+    "cognizable": "N/A",
+    "bailable": "N/A",
+    "triable_by": "N/A",
+    "legal_procedure_guidance": "Used to establish that a document qualifies as forged in offences under Sections 463–471.",
+    "keywords": [
+      "Section 470 IPC",
+      "forged document definition",
+      "false document meaning",
+      "legal definition of forgery"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "counterfeiting",
+    "chapter_number": "XVIII",
+    "chapter_title": "Of Offences Relating to Documents and to Property Marks",
+    "section_number": "472",
+    "section_title": "Making or possessing counterfeit seal, etc., with intent to commit forgery punishable under section 467",
+    "official_text": "Whoever makes or counterfeits any seal, plate or other instrument for making an impression, intending that the same shall be used for committing forgery punishable under section 467, or possesses such instrument knowing it to be counterfeit, shall be punishable with imprisonment for life, or imprisonment up to seven years, and shall also be liable to fine.",
+    "simplified_explanation": "Making or keeping tools like fake seals, stamps, or plates meant for forging high-value documents (like wills or valuable securities) is a serious crime.",
+    "punishment": "Imprisonment for Life OR Imprisonment up to 7 years AND fine.",
+    "offence_type": "Criminal",
+    "cognizable": "Non-cognizable",
+    "bailable": "Non-bailable",
+    "triable_by": "Court of Session",
+    "legal_procedure_guidance": "Possession with intent is sufficient. No need to prove actual forged document was created.",
+    "keywords": [
+      "Section 472 IPC",
+      "counterfeit seal",
+      "forgery instruments",
+      "fake stamp tools",
+      "valuable security forgery tools"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVII",
+    "chapter_title": "Of Offences Against Property",
+    "section_number": "383",
+    "section_title": "Extortion",
+    "official_text": "Whoever intentionally puts any person in fear of any injury to that person or another, and thereby dishonestly induces the person so put in fear to deliver any property or valuable security, commits extortion.",
+    "simplified_explanation": "Extortion occurs when someone threatens harm (physical, reputational, or property damage) to force another person to give money, property, or sign documents.",
+    "punishment": "Punishable under Section 384 IPC.",
+    "offence_type": "Criminal",
+    "cognizable": "Non-cognizable",
+    "bailable": "Bailable",
+    "triable_by": "Refer Section 384",
+    "legal_procedure_guidance": "Must prove fear + dishonest inducement + delivery of property.",
+    "keywords": [
+      "Section 383 IPC",
+      "extortion definition",
+      "blackmail",
+      "fear of injury",
+      "coerced delivery of property",
+      "extortion",
+      "forced payment"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVII",
+    "chapter_title": "Of Offences Against Property",
+    "section_number": "384",
+    "section_title": "Punishment for extortion",
+    "official_text": "Whoever commits extortion shall be punished with imprisonment of either description for a term which may extend to three years, or with fine, or with both.",
+    "simplified_explanation": "This section prescribes the punishment for committing extortion as defined in Section 383.",
+    "punishment": "Imprisonment up to 3 years OR fine OR both.",
+    "offence_type": "Criminal",
+    "cognizable": "Non-cognizable",
+    "bailable": "Bailable",
+    "triable_by": "Any Magistrate",
+    "legal_procedure_guidance": "Victim must file complaint; police require court direction for investigation (as non-cognizable).",
+    "keywords": [
+      "Section 384 IPC",
+      "extortion punishment",
+      "blackmail penalty",
+      "criminal intimidation for property"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "section_number": "386",
+    "section_title": "Extortion by putting a person in fear of death or grievous hurt",
+    "domain": "criminal_law",
+    "punishment": "Imprisonment up to 10 years AND fine.",
+    "cognizable": "Cognizable",
+    "bailable": "Non-bailable",
+    "triable_by": "Magistrate of First Class",
+    "keywords": [
+      "death threat extortion",
+      "serious blackmail"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "section_number": "387",
+    "section_title": "Putting person in fear of death or grievous hurt to commit extortion",
+    "domain": "criminal_law",
+    "punishment": "Imprisonment up to 7 years AND fine.",
+    "cognizable": "Cognizable",
+    "bailable": "Non-bailable",
+    "triable_by": "Magistrate of First Class",
+    "keywords": [
+      "threat for extortion",
+      "intimidation for money"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "section_number": "388",
+    "section_title": "Extortion by threat of accusation of offence punishable with death",
+    "domain": "criminal_law",
+    "punishment": "Imprisonment up to 10 years AND fine.",
+    "cognizable": "Cognizable",
+    "bailable": "Non-bailable",
+    "triable_by": "Court of Session",
+    "keywords": [
+      "false accusation threat",
+      "serious coercion"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "section_number": "389",
+    "section_title": "Putting person in fear of accusation of offence",
+    "domain": "criminal_law",
+    "punishment": "Imprisonment up to 10 years AND fine.",
+    "cognizable": "Cognizable",
+    "bailable": "Non-bailable",
+    "triable_by": "Court of Session",
+    "keywords": [
+      "fear of accusation",
+      "threatening legal case"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "section_number": "499",
+    "section_title": "Defamation",
+    "domain": "criminal_law",
+    "punishment": "Punishable under Section 500 IPC.",
+    "cognizable": "Non-cognizable",
+    "bailable": "Bailable",
+    "triable_by": "Any Magistrate",
+    "keywords": [
+      "defamation",
+      "reputation harm",
+      "false statement"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "section_number": "500",
+    "section_title": "Punishment for defamation",
+    "domain": "criminal_law",
+    "punishment": "Imprisonment up to 2 years OR fine OR both.",
+    "cognizable": "Non-cognizable",
+    "bailable": "Bailable",
+    "triable_by": "Any Magistrate",
+    "keywords": [
+      "defamation punishment",
+      "libel",
+      "slander"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "section_number": "120B",
+    "section_title": "Punishment for criminal conspiracy",
+    "domain": "criminal_law",
+    "punishment": "Punishment depends on main offence; may extend to life imprisonment if conspiracy involves serious crime.",
+    "cognizable": "Depends on underlying offence",
+    "bailable": "Depends on underlying offence",
+    "triable_by": "Depends on underlying offence",
+    "keywords": [
+      "criminal conspiracy",
+      "planned crime",
+      "joint offence"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XIV",
+    "chapter_title": "Of Offences Affecting the Public Health, Safety, Convenience, Decency and Morals",
+    "section_number": "279",
+    "section_title": "Rash driving or riding on a public way",
+    "official_text": "Whoever drives any vehicle, or rides, on any public way in a manner so rash or negligent as to endanger human life, or to be likely to cause hurt or injury to any other person, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to one thousand rupees, or with both.",
+    "simplified_explanation": "Driving rashly or negligently on a public road in a way that endangers people is an offence. This section is commonly applied in road accident cases along with Motor Vehicles Act provisions.",
+    "punishment": "Imprisonment up to 6 months, OR fine up to ₹1,000, OR both.",
+    "legal_procedure_guidance": "Police usually register this section together with the Motor Vehicles Act sections in an accident FIR. Evidence of rash or negligent driving (speed, manner of driving, road conditions, witness statements) is required. The victim or family can file an FIR at the police station where the accident occurred.",
+    "keywords": [
+      "rash driving",
+      "negligent driving",
+      "accident",
+      "hit by vehicle",
+      "public way",
+      "road accident",
+      "dangerous driving",
+      "Section 279 IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVI",
+    "chapter_title": "Of Offences Affecting Life",
+    "section_number": "304A",
+    "section_title": "Causing death by negligence",
+    "official_text": "Whoever causes the death of any person by doing any rash or negligent act not amounting to culpable homicide shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
+    "simplified_explanation": "If a person dies because of someone's rash or negligent act — such as careless driving — the person responsible can be prosecuted under this section. It applies to fatal road accidents where there was no intention to kill.",
+    "punishment": "Imprisonment up to 2 years, OR fine, OR both.",
+    "legal_procedure_guidance": "In a fatal accident, the police register an FIR under Section 304A IPC along with the relevant Motor Vehicles Act sections. The family of the deceased can also claim compensation before the Motor Accident Claims Tribunal. Preserve medical records, the post-mortem report, and witness details.",
+    "keywords": [
+      "death by negligence",
+      "fatal accident",
+      "accident death",
+      "negligent driving death",
+      "hit and run death",
+      "road accident death",
+      "Section 304A IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVI",
+    "chapter_title": "Of Offences Affecting Life",
+    "section_number": "337",
+    "section_title": "Causing hurt by act endangering life or personal safety of others",
+    "official_text": "Whoever causes hurt to any person by doing any act so rashly or negligently as to endanger human life, or the personal safety of others, shall be punished with imprisonment of either description for a term which may extend to six months, or with fine which may extend to five hundred rupees, or with both.",
+    "simplified_explanation": "Causing injury to someone through a rash or negligent act that endangered their safety is an offence. In road accidents, this applies when a person suffers hurt (not grievous hurt) due to negligent driving.",
+    "punishment": "Imprisonment up to 6 months, OR fine up to ₹500, OR both.",
+    "legal_procedure_guidance": "The injured person should get a medical examination and preserve the medical report. An FIR can be filed at the police station where the accident occurred. This section is usually invoked along with Section 279 IPC and Motor Vehicles Act provisions.",
+    "keywords": [
+      "hurt in accident",
+      "injury accident",
+      "act endangering life",
+      "minor injury negligence",
+      "road accident injury",
+      "Section 337 IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVI",
+    "chapter_title": "Of Offences Affecting Life",
+    "section_number": "338",
+    "section_title": "Causing grievous hurt by act endangering life or personal safety of others",
+    "official_text": "Whoever causes grievous hurt to any person by doing any act so rashly or negligently as to endanger human life, or the personal safety of others, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine which may extend to one thousand rupees, or with both.",
+    "simplified_explanation": "Causing serious injury (such as fractures or permanent damage) through rash or negligent conduct is a more serious offence than ordinary hurt. It applies to road accidents where the victim suffers grievous injuries.",
+    "punishment": "Imprisonment up to 2 years, OR fine up to ₹1,000, OR both.",
+    "legal_procedure_guidance": "Obtain a detailed medical report describing the injuries as grievous. File an FIR at the local police station and keep copies of all medical and accident documents. Compensation can also be claimed before the Motor Accident Claims Tribunal.",
+    "keywords": [
+      "grievous hurt accident",
+      "serious injury accident",
+      "fracture accident",
+      "road accident serious injury",
+      "negligence grievous hurt",
+      "Section 338 IPC"
+    ]
+  },
+  {
+    "act_name": "Indian Penal Code, 1860",
+    "domain": "criminal_law",
+    "chapter_number": "XVII",
+    "chapter_title": "Of Offences Against Property",
+    "section_number": "427",
+    "section_title": "Mischief causing damage to the amount of fifty rupees or upwards",
+    "official_text": "Whoever commits mischief and thereby causes loss or damage to the amount of fifty rupees or upwards, shall be punished with imprisonment of either description for a term which may extend to two years, or with fine, or with both.",
+    "simplified_explanation": "Damaging someone's property — including a vehicle — during an accident or altercation can attract this section. It is often added when property is damaged in a road accident.",
+    "punishment": "Imprisonment up to 2 years, OR fine, OR both.",
+    "legal_procedure_guidance": "Document the damage with photographs and repair estimates. Mention the property damage in the FIR so the police can include this section where applicable.",
+    "keywords": [
+      "property damage accident",
+      "vehicle damage",
+      "mischief damage",
+      "accident property damage",
+      "Section 427 IPC"
+    ]
+  },
+  {
+    "act_name": "Motor Vehicles Act, 1988",
+    "domain": "traffic",
+    "chapter_number": "XIII",
+    "chapter_title": "Offences, Penalties and Procedure",
+    "section_number": "190",
+    "section_title": "Using vehicle in unsafe condition",
+    "official_text": "Whoever drives or causes to be driven any motor vehicle in any public place in a condition that is unsafe or poses a danger to the public shall be punishable with imprisonment for a term which may extend to three months, or with fine which may extend to five thousand rupees, or with both. The vehicle may also be detained by the police.",
+    "simplified_explanation": "Driving a vehicle with defective brakes or any other unsafe condition is an offence. The police can detain the vehicle, and the driver or the person responsible for maintaining it can be prosecuted.",
+    "punishment": "Imprisonment up to 3 months, OR fine up to ₹5,000, OR both; the vehicle may also be detained.",
+    "legal_procedure_guidance": "If an accident was caused by brake failure, ask the police to inspect the vehicle and record its mechanical condition in the accident report. The owner/operator may also be liable for failing to maintain the vehicle in a roadworthy condition. Preserve the inspection report, repair records and photographs.",
+    "keywords": [
+      "brake failure",
+      "brakes failed",
+      "defective brakes",
+      "unsafe vehicle",
+      "unroadworthy vehicle",
+      "vehicle defect accident",
+      "maintenance liability",
+      "Section 190 MVA"
+    ]
+  }
+]
